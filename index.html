@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="estilo/style.css" />
+  <title>🖥️Jennyfer</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <header>
+    <div class="container-fluid mt-3">
+      <div class="video-container">
+        <video id="video" autoplay loop muted class="video-bg" preload="auto">
+          <source src="./img/bgg01.mp4" type="video/mp4" />
+        </video>
+        
+        <h1 id="titulo" class="hidden">Hi, I'm Jennyfer!</h1>
+        <h4 id="textinho" class="hidden">I am a Web Dev Front End</h4>
+
+        <h4 id="textinho1" class="hidden">Welcome to my Portfolio!</h4>
+
+      
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light  sticky-top mt-0 mb-0">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.linkedin.com/in/jennyfer-alvim-de-oliveira-800441263" target="_blank"> <img src="./img/logo.png" width="50px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Sobre">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Servico">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Tecnologia">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Educacao">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Projeto">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contato">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<article id="Sobre" class="articleUm">
+  <div class="container-fluid">
+    <div class="row">
+    
+      <div class="col-12 col-lg-5 order-lg-2">
+        <div class="content-wrapper text-top">
+          <h2 class="h2-sobre">I'm Jennyfer Alvim</h2>
+          <p class="sobre-text">I was born on 13/03/1999 in the city of São Roque, and throughout my 24 years, from a curious child, I became an adult passionate about learning new things, and in technology, where there is always something to be developed, I found myself!
+            I have been doing art since I was 7 years old.<br>
+            Now I create art through code.<br>
+            The next level is to become a software engineer!</p>
+          <button class="custom-btn btn-2" onclick="downloadPDF()"><span>Resume</span><span>Download </span></button>
+        </div>
+
+
+      </div>
+
+
+      <div class="col-12 col-lg-6 order-lg-1 teste">
+        <div class="img-container">
+          <img src="./img/meee.png" class="img-fluid img-thumnail img-about img-bottom" alt="Imagem">
+        </div>
+
+
+      
+      </div>
+    </div>
+  </div>
+</article>
+
+  <section class="links">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/jennyfer-alvim-de-oliveira-800441263" class="social-icon">
+   
+        <img src="./img/linkedin.png" alt="logo linkedin" />
+      </a>
+
+      <a href="https://github.com/JennieOliveira99" target="_blank" class="social-icon">
+   
+        <img src="./img/githubb.png" alt="github logo" />
+      </a>
+
+      <a href="mailto:jennyferalvim@gmail.com" target="_blank" class="social-icon">
+        <img src="./img/logotipo-do-gmail.png" alt="gmail logo" />
+      </a>
+      </div>
+  </section>
+
+
+  <section id="Servico" class="section-servico">
+    <div class="container-fluid">
+      <h2 class="text-center h2-topicos">Services</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 servico-item1">
+          <div class="d-flex ">
+            <img class="img-servico" src="./img/technology.png"  width="52px" alt="Descrição da Imagem">
+        </div>
+          <h3 class="h3-servico">Development</h3>
+          <p class="p-servico">Website and Web Application Development;<br>
+                                Performance Optimization; <br>
+                                Maintenance, and Support for Websites and Web Applications.</p>
+        </div>
+        
+        <div class="col-md-3 col-sm-6 servico-item2">
+          <div class="d-flex ">
+            <img class="img-servico" src="./img/bd.png" width="60px" alt="Descrição da Imagem">
+        </div>
+          <h3 class="h3-servico">Database</h3>
+          <p class="p-servico">Database Development;<br>
+                              Data Modeling; <br>
+                              Database Administration, SQL Server and MySQL.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 servico-item3">
+          <div class="d-flex ">
+            <img class="img-servico" src="./img/collaboration.png" width="50px" alt="Descrição da Imagem">
+        </div>
+          <h3 class="h3-servico">Software Documentation</h3>
+          <p class="p-servico">Business Process Modeling;<br>
+                                Software Architecture;<br>
+                                Technical Documentation.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 servico-item4">
+          <div class="d-flex ">
+            <img  class="img-servico" src="./img/design.png" width="50px" alt="Descrição da Imagem">
+        </div>
+          <h3 class="h3-servico">Web Design</h3>
+          <p class="p-servico">Interactive Prototyping;<br>
+                                Website Redesign;<br>
+                                Website Design.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="Tecnologia" class="text-white position-relative">
+   
+    <div class="container-fluid">
+      <div class="row">
+        <h2 class="text-center h2-topicos">Technology</h2>
+        <!-- Container para as imagens -->
+        <div class="container-fluid mt-5">
+          <div class="row">
+  
+            <div class="d-flex justify-content-center align-items-center">
+            <div class="minimenu">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs justify-content-center" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#menu0">Front End</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#menu1">Back End</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#menu2">Software Engineer</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#menu3">Database</a>
+                </li>-->
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="menu0" class="container-fluid tab-pane active">
+                  <br />
+                  <div class="d-flex flex-wrap justify-content-center align-items-center">
+                  <img class="img-tec" src="./img/whitehtml.png" width="30px" height="35px" alt="Tecnologia 1">
+                  <img class="img-tec" src="./img/whitecss.png" width="30px" height="35px" alt="Tecnologia 1">
+                  <img class="img-tec" src="./img/whitejs.png" width="30px" height="35px" alt="Tecnologia 1">
+                  <img class="img-tec" src="./img/whiteboot.png" width="40px" height="33px" alt="Tecnologia 1">
+                  <img class="img-tec" src="./img/whitefigma.png" width="35px" height="35px" alt="Tecnologia 1">
+              </div>
+                  <h3 class="h3-tec">HTML, CSS, Javascript, Bootstrap</h3>
+                  <p class="text-tec">
+                    Used to create dynamic and creative web interfaces, utilizing libraries like Bootstrap to streamline
+                    the development of site responsiveness.
+                  </p>
+
+                  <h3 class="h3-tec">Design and prototyping</h3>
+                  <p class="text-tec">
+                    Using Figma to produce prototypes and simulate user interaction. Using CorelDraw to Create and Editing
+                    images.<br>
+                </div>
+
+                <div id="menu1" class="container-fluid tab-pane fade">
+                  <br>
+                  <div class="d-flex flex-wrap justify-content-center align-items-center">
+                  <img class="img-tec" src="./img/whitenode.png" width="35px" height="40px" alt="Tecnologia 1">
+                  <img class="img-tec" src="./img/whitephp.png" width="35px" height="40px"  alt="Tecnologia 1">
+                  <img class="img-tec" src="./img/whitemysql.png" width="40px" height="40px" alt="Tecnologia 1">
+                  <img class="img-tec" src="./img/sql-server.png" width="40px" height="40px" alt="Tecnologia 1"></div>
+                   <h3 class="h3-tec">NodeJs, PHP</h3>
+                  <p class="text-tec">
+                    Used on the server side to process requests, interact with databases, generate dynamic content, and
+                    perform various operations in the backend, creating dynamic and interactive systems.
+                  </p>
+
+                  <h3 class="h3-tec">MySQL and SQL Server Management Studio</h3>
+                  <p class="text-tec">
+                    Experience in development, querying, management, and data modeling using SQL Server Management
+                    Studio and MySQL.<br>
+                    Expertise in ERD (Entity-Relationship Diagram), ERM (Entity-Relationship Model), Relational Databases
+                  </p>
+                 
+                </div>
+
+                <div id="menu2" class="container-fluid tab-pane fade">
+                  <br>
+                  <div class="d-flex flex-wrap justify-content-center align-items-center">
+                  <img class="img-tec" src="./img/whitegit.png" width="30px" alt="Tecnologia 1">
+                  <img class="img-tec" src="./img/whitegithub.png" width="30px" alt="Tecnologia 1"></div>
+                 
+                  <h3 class="h3-tec">Software maintenance</h3>
+                  <p class="text-tec">Version control with Git and GITHUB.</p>
+
+                  
+
+
+
+
+                  <h3 class="h3-tec">Requirements Analysis</h3>
+                  <p class="text-tec">
+                    Visio and Draw.io used to create various structural UML diagrams and behavioral UML diagrams such
+                    as: Component Diagram, State Diagram, Use Case Diagram, Sequence Diagram, and others.
+                  </p>
+
+               
+
+                
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <article id="Educacao" class="article-formacao">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-12 p-3">
+          <h2 class=" text-center h2-topicos ">Education</h2>
+
+          <!-- The Timeline -->
+
+          <ul class="timeline">
+            <!-- Item 1 -->
+            <li>
+              <div class="direction-r">
+                <div class="flag-wrapper">
+                  <span class="flag">Systems for internet</span><br>
+                  <span class="time-wrapper"><span class="time">2022 - present</span>
+                </span>
+                </div>
+                <div class="desc">
+                  Technology college started in 2022, where besides learning, I was able to make friendships, present
+                  projects at academic events, and enhance my technical programming skills.<br>
+                  <button class="link-grade" data-indice="0">See my course schedule</button>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- Item 2 -->
+            <li>
+              <div class="direction-l">
+                <div class="flag-wrapper">
+                  <span class="flag">Systems Development</span><br>
+                 
+                  <span class="time-wrapper"><span class="time">2019 - 2021</span>
+                </div>
+                <div class="desc">
+                  Technical course where I had my first contact with programming through CSharp and JavaScript. I was
+                  elected class representative for all 3 semesters of the course, which helped develop my leadership and
+                  empathy skills.<br>
+                  <button class="link-grade" data-indice="1">See my course schedule</button>
+
+
+                </div>
+              </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li>
+              <div class="direction-r">
+                <div class="flag-wrapper">
+                  <span class="flag">Additional Certifications:</span><br>
+                  <span class="time-wrapper"><span class="time">2020 - present</span>
+                </div>
+                <div class="desc">
+                  Courses taken to enhance technical skills.
+                  <button class="link-grade" data-indice="2">See my course schedule</button>
+
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+
+
+
+  <article id="Projeto" class="articleDois">
+    <div class="container-fluid">
+      <div class="row">
+        <h2 class="text-center h2-topicos ">Projects</h2>
+
+
+        <div class="container-fluid">
+          <div class="row">
+  
+  
+            <div class="col-12 col-md-12 col-lg-6 p-3 ">
+              <h2 class="h2-project-left">Javascript Games</h2>
+              
+              <img class="img-left" src="./img/html.png" width="40px" alt="Tecnologia 1">
+              <img class="img-left" src="./img/css.png" width="40px" alt="Tecnologia 1">
+              <img class="img-left" src="./img/javascript.png" width="40px" alt="Tecnologia 1">
+              <img class="img-left" src="./img/bootstrap.png" width="40px" alt="Tecnologia 1">
+  
+              <p class="text-left">Last project of the 2023 academic semester, presenting
+                some JavaScript content learned in class, and 3 original games with original illustrations, namely: 
+                1- "Skate Game"  inspired by the game "Super 
+                Mario Bros", 2- RPG game "Captor Card" where at the end of the story, the 
+                player needs to capture a card, inspired by the classic "kill a fly", 3-
+                 Successful project from the XI Technology Week at Fatec São Roque "JavaScript Quiz", 
+                modifying it to add the theme: Women in Technology.</p>
+                <button class="btn-code-left"><a href="#" download>View</a></button>
+              <button class="btn-code-left-pink"><a href="https://github.com/JennieOliveira99/CardCaptorGame/tree/master" target="_blank">Code</a></button>
+  
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 p-3 ">
+              <div class="img-project">
+                <img src="./img/rpg.png" width="500px" class="img-thumnail d-block img-projeto width" alt="Imagem">
+      
+              </div>
+            </div>
+
+
+            <div class="container-fluid">
+              <div class="row">
+      
+        <div class="col-12 col-md-12 col-lg-6 p-3 order-lg-2">
+          
+          <h2 class="h2-project">Arlindo</h2>
+          <img class="img/img-left" src="./img/html.png" width="40px" alt="Tecnologia 1">
+          <img class="img-left" src="./img/css.png" width="40px" alt="Tecnologia 1">
+          
+          <img class="img-left" src="./img/bootstrap.png" width="40px" alt="Tecnologia 1">
+  
+          <p class="text">Version 2.0 of the website about the Brazilian comic "Arlindo", 
+            made in the 1st semester, analyzing the 1st version made only with HTML, CSS there were 
+            many improvements to be implemented, the project is under development, with an expected 
+            completion date in March 2024.<br> You can follow the development through my GitHub.</p>
+          <!--<button class="btn-code"><a href="#" download>View</a></button>-->
+          <button class="btn-code"><a href="https://github.com/JennieOliveira99/Arlindo-Site" target="_blank">Code</a></button>
+        </div>
+  
+        <div class="col-12 col-md-12 col-lg-6 p-3 order-lg-1">
+          <div class="img-project">
+            <img src="./img/arlin2.png" width="400px" class="img-thumnail  img-projeto" alt="Imagem">
+  
+          </div>
+
+  
+        </div>
+  </div>
+  </div>
+  </div>
+
+  
+  
+        <div class="container-fluid">
+          <div class="row">
+  
+  
+            <div class="col-12 col-md-12 col-lg-6 p-3 ">
+              <h2 class="h2-project-left">Audiobook</h2>
+              
+              <img class="img-left"  src="./img/html.png" width="40px" alt="Tecnologia 1">
+              <img class="img-left" src="./img/css.png" width="40px" alt="Tecnologia 1">
+              <img class="img-left" src="./img/javascript.png" width="40px" alt="Tecnologia 1">
+              <img class="img-left" src="./img/bootstrap.png" width="40px" alt="Tecnologia 1">
+  
+  
+              <p class="text-left">Customizable audiobook where the user selects the work, 
+                pauses, advances, goes back, plays again, made in JavaScript, HTML, CSS, 
+                Bootstrap. It is under development with an expected completion date in April 2024.
+                <br> You can follow the development through my GitHub.</p>
+              <button class="btn-code-left"><a href="#" download>View</a></button>
+              <button class="btn-code-left-pink"><a href="https://github.com/JennieOliveira99/Audiobook" target="_blank">Code</a></button>
+  
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 p-3 ">
+              <div class="img-project">
+                <img src="./img/audiobook.png" class="img-thumnail  img-projeto" alt="Imagem">
+      
+              </div>
+            </div>
+  
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </article>
+<section id="Contato" class="section-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-sm-10 col-12">
+        <h2 class="text-center h2-cont">Contact</h2>
+        <form class="form" action="https://api.web3forms.com/submit" method="POST" class="form">
+          <div class="form-group">
+            <input type="hidden" name="access_key" value="66c7ca2d-9df3-4f14-931b-f06e4baf1286">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+          </div>
+
+          <button type="submit" class="btn2 btn-primary custom-btn btn-2">
+            <span>E-mail</span>
+            <span>Send</span>
+          </button>
+         
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>

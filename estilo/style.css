@@ -1,0 +1,821 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gruppo&family=Josefin+Sans:wght@300&family=Oswald&family=Rokkitt&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f3f3f38f;
+}
+
+#titulo {
+  font-family: "Black Ops One", system-ui;
+}
+p {
+  font-family: "Gruppo", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #192429;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 220px;
+  margin-bottom: 10px;
+  color: #8d62e9;
+  font-size: 4em;
+}
+
+.h2-topicos {
+  margin-top: 70px;
+  font-size: 70px;
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  color: #8d62e9;
+}
+
+/*------------------------------------------------Video*/
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-bg {
+  opacity: 0.3;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.header-texts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+h1,
+#textinho,
+#textinho1 {
+  position: relative;
+  opacity: 0;
+  animation: slideInFromBottom 1s ease-in-out forwards;
+  text-align: center;
+}
+
+#textinho,
+#textinho1 {
+  font-size: 2em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#img-icon1,
+#img-icon2,
+#img-icon3,
+#img-icon4,
+#img-icon5,
+#img-icon6 {
+  position: relative; /* Adicione esta linha para garantir que a posição relativa seja respeitada */
+  transform: translate(-30%, -50%);
+  opacity: 0;
+  animation: slideInFromBottom 1s ease-in-out forwards;
+}
+
+/*------------Animação dos primeiros textos*/
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*---------------------------------Links redes sociais*/
+.social-links {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 900;
+}
+
+.social-icon {
+  margin-right: 10px;
+  margin-bottom: 10px; /* Espaçamento entre os ícones */
+  text-decoration: none;
+  display: block;
+}
+
+.social-icon img {
+  width: 30px; /* Largura dos ícones */
+  height: 30px; /* Altura dos ícones*/
+  z-index: 1000;
+}
+.social-icon:hover img {
+  transform: scale(1.5); /* tamanho */
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------nav*/
+.navbar {
+  background-color: #c839c6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  z-index: 1000;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+  display: flex; /* Usando Flexbox para layout */
+  justify-content: flex-end; /* Alinhando os itens à direita */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-family: "gruppo";
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 15px; /* Adicionando margem entre os links */
+  transition: color 0.4s ease, text-decoration 0.3s ease; /* Adicionando transição suave */
+}
+
+.navbar-nav .nav-link:hover {
+  color: black; /* Cor do texto ao passar o mouse */
+  text-decoration: underline; /* Adicionando linha ao passar o mouse */
+}
+
+/*------------------------------------------SOBRE MIM*/
+
+.articleUm {
+  padding: 0;
+  background-color: #4743432a;
+}
+/*
+.front {
+  padding: 50px;
+  color: #fefffd;
+  font-family: "Black Ops One", system-ui;
+  margin-top: 160px;
+  margin-right: 30px;
+  font-size: 18px;
+  margin-left: 0;
+  margin-bottom: 45px;
+}*/
+/*
+.teste {
+  /*background-color: #8d62e9;
+  border: 2px solid #00000049;
+  /* border-top-right-radius: 50%; /* Raio alto para o canto superior esquerdo */
+/*border-bottom-right-radius: 50%; /* Raio alto para o canto inferior esquerdo */
+/* border-top-left-radius: 0; /* Manter o canto superior direito reto */
+/* border-bottom-left-radius: 0;*/
+
+.text-top {
+  padding-right: 10px;
+  padding-left: 50px;
+}
+.h2-sobre {
+  color: #8d62e9;
+  font-size: 60px;
+  margin-left: 25px;
+  margin-bottom: 45px;
+  font-family: "";
+  margin-top: 70px;
+  font-family: "Oswald", sans-serif;
+}
+
+.sobre-text {
+  color: #2f2843;
+  font-size: 18pxpx;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-left: 25px;
+  margin-right: 40px;
+  font-family: "Roboto", sans-serif;
+}
+.sobre-text2 {
+  color: #c839c6;
+  font-size: 18px;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-left: 25px;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 45px;
+}
+
+.img-bottom {
+  margin-left: -11px;
+}
+/*botao*/
+/* ANIMAÇAO E ESTILIZAÇÃO BOTOES 3D--------------*/
+
+.button {
+  margin-top: 50px;
+}
+/* Estilos para botões personalizados */
+.custom-btn,
+.btn-2 {
+  /* Estilos compartilhados para largura, altura, cor do texto, borda arredondada, preenchimento, fonte, fundo, cursor e transição */
+  width: 150px;
+  height: 40px;
+  color: #ffffff; /* Cor do texto */
+  border-radius: 5px; /* Borda arredondada */
+  padding: 15px 25px; /* Espaçamento interno */
+  font: bold 25px "gruppo"; /* Fonte e tamanho do texto */
+  background: transparent; /* Fundo transparente */
+  cursor: pointer; /* Cursor ao passar sobre o botão */
+  transition: all 0.3s ease; /* Transição suave para mudanças */
+  position: relative; /* Posição relativa para alinhamento de conteúdo interno */
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    /* Sombra interna */ 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    /* Sombra externa */ 4px 4px 5px 0px rgba(0, 0, 0, 0.1); /* Sombra adicional */
+  outline: none; /* Remover contorno ao focar */
+}
+
+/* Estilos específicos para o botão .btn-2 */
+.btn-2 {
+  /* Ajustes específicos de margem, posição e tamanho */
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  right: 0px; /* Alinhamento à direita */
+  bottom: 20px; /* Alinhamento na parte inferior */
+  border: none; /* Remover borda */
+  box-shadow: none; /* Remover sombra */
+  width: 130px; /* Largura específica */
+  height: 40px; /* Altura específica */
+  line-height: 42px; /* Altura da linha para centralização vertical do texto */
+  perspective: 230px; /* Perspectiva para transformações 3D */
+}
+
+/* Estilos para as partes animadas do botão */
+.btn-2 span {
+  /* Estilos compartilhados para parte animada */
+  background: linear-gradient(
+    0deg,
+    #c839c6 0%,
+    #8d62e9 100%
+  ); /* Gradiente de fundo */
+  display: block; /* Exibir como bloco */
+  position: absolute; /* Posicionamento absoluto */
+  width: 170px; /* Largura */
+  height: 40px; /* Altura */
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    /* Sombra interna */ 7px 7px 20px 0px rgba(134, 226, 13, 0.1),
+    /* Sombra externa */ 4px 4px 5px 0px rgba(0, 0, 0, 0.822); /* Sombra adicional */
+  border-radius: 5px; /* Borda arredondada */
+  margin: 0; /* Margem zero */
+  text-align: center; /* Alinhamento do texto */
+  box-sizing: border-box; /* Modelo de caixa para incluir borda e preenchimento */
+  transition: all 0.5s; /* Transição suave */
+  transform-origin: 50% 50% -20px; /* Origem da transformação 3D */
+}
+
+/* Animação do botão ao ser pressionado */
+.btn-2 span:nth-child(1) {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001; /* Sombra específica */
+  transform: rotateX(90deg); /* Rotação 3D */
+}
+
+/* Reset da animação do botão ao ser solto */
+.btn-2 span:nth-child(2) {
+  transform: rotateX(0deg); /* Rotação 3D */
+}
+
+/* Animação ao passar o mouse sobre o botão */
+.btn-2:hover span:nth-child(1),
+.btn-2:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    /* Sombra interna */ 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    /* Sombra externa */ 4px 4px 5px 0px rgba(0, 0, 0, 0.1); /* Sombra adicional */
+}
+
+/* Animação específica ao passar o mouse sobre a primeira parte do botão */
+.btn-2:hover span:nth-child(1) {
+  transform: rotateX(0deg); /* Rotação 3D */
+}
+
+/* Animação específica ao passar o mouse sobre a segunda parte do botão */
+.btn-2:hover span:nth-child(2) {
+  color: transparent; /* Torna o texto transparente */
+  transform: rotateX(-90deg); /* Rotação 3D */
+}
+
+/*-------------------------------------------------------------------------------------------------SERVIÇOS*/
+
+.section-servico {
+  width: 100%; /* Alteração feita para permitir que o conteúdo se estenda completamente */
+  padding-right: 55px;
+  padding-left: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 180px;
+  background: linear-gradient(to bottom, #f3f3f38f, rgba(0, 0, 0, 0.151));
+}
+
+.p-servico {
+  font-size: 18px;
+  color: #dde3eb;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.h2-service {
+  margin-top: 70px;
+  font-size: 70px;
+  margin-bottom: 45px;
+  font-family: "Oswald", sans-serif;
+  color: #8d62e9;
+}
+
+.h3-servico {
+  font-family: "Gruppo", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #c839c6;
+  margin-left: 50px;
+}
+
+.servico-item1,
+.servico-item2,
+.servico-item3,
+.servico-item4 {
+  background-color: #252423;
+  padding: 5px;
+  margin-right: 30px; /*erro aqui*/
+  border-radius: 10%;
+  height: 280px;
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.img-servico {
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*------------------------------------------------------------------------------------------------- TECNOLOGIAS*/
+
+.text-white {
+  position: relative; /* Definindo a seção como relativa */
+}
+
+.text-white {
+  background: linear-gradient(to top, #252423, rgba(0, 0, 0, 0.151));
+}
+.img-tec {
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.h2-tec {
+  margin-left: 70px;
+  margin-top: 70px;
+  font-size: 70px;
+  margin-bottom: 15px;
+  font-family: "Oswald", sans-serif;
+  color: #8d62e9;
+}
+
+.h3-tec {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  color: #ffffff;
+  margin-left: 23px;
+}
+
+.text-tec {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-left: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.minimenu {
+  /*background-color: #252423b2;*/
+  border-radius: 30px 10px 20px 5px;
+  padding: 30px;
+  height: 500px;
+  width: 1300px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  /*overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+  margin-bottom: 100px;
+}
+
+.nav-link {
+  color: #c9df25;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+.minimenu .nav-link:hover {
+  color: #000000; /* Altera a cor do texto para amarelo ao passar o mouse */
+}
+
+/*---------------------------------------------------------------------------------------------------------------FORMAÇÃO*/
+.article-formacao {
+  background-color: #252423;
+}
+
+.h2-formacao {
+  margin-left: 70px;
+  margin-top: 70px;
+  font-size: 70px;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #8d62e9;
+}
+/*Estiliza a descrição associada a cada evento na linha do tempo.*/
+.desc {
+  margin: 1em 0.75em 0 1;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5em;
+  color: #f5f3f8;
+}
+
+/*------------------------------- TIMELINE*/
+
+/* Define sua posição, largura, margens, preenchimento e remove a estilização padrão da lista.*/
+
+.timeline {
+  font-size: 18px;
+  line-height: 1.6em;
+  position: relative;
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1em 0;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.time {
+  font-size: 14px;
+}
+
+/*Adiciona uma linha vertical no centro da linha do tempo usando pseudoelemento :before.*/
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: " ";
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: #c9df25; /* Cor sólida */
+  background: linear-gradient(
+    to bottom,
+    rgba(201, 223, 37, 0) 0%,
+    rgba(201, 223, 37, 1) 8%,
+    rgba(201, 223, 37, 1) 92%,
+    rgba(201, 223, 37, 0) 100%
+  );
+}
+
+/*Define o preenchimento e estilo para os itens da linha do tempo.*/
+/*Adiciona um pseudoelemento :after para limpar a formatação de elementos filhos flutuantes.*/
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-l {
+  position: relative;
+  width: 300px;
+  float: left;
+  text-align: right;
+}
+
+.direction-r {
+  position: relative;
+  width: 300px;
+  float: right;
+}
+
+/*Estiliza as bandeiras exibidas nos itens da linha do tempo.*/
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  /* background: rgb(133, 112, 112);*/
+  /*  padding: 6px 6px;*/
+  border-radius: 30px;
+  color: #c839c6;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+/*circulos*/
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: #c839c6;
+  border-radius: 10px;
+  border: 4px solid #c839c6;
+  z-index: 10;
+}
+
+.direction-r .flag:before {
+  left: -60px;
+}
+
+/*Estiliza a área que contém a data e hora associadas a cada evento na linha do tempo.*/
+.time-wrapper {
+  display: inline;
+  line-height: 1em;
+  font-size: 0.66666em;
+  color: #2f2843;
+  vertical-align: middle;
+}
+
+.direction-l .time-wrapper {
+  float: left;
+}
+
+.direction-r .time-wrapper {
+  float: right;
+}
+/*Anos de cursos*/
+
+.time {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  display: inline-block;
+  padding: 4px 6px;
+  background-color: #c9df25;
+  border-radius: 10%;
+}
+
+.link-grade {
+  color: #dde3eb;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #c839c6;
+  padding: 5px;
+  border-radius: 10px;
+}
+.direction-r .desc {
+  margin: 1em 0 0 0.75em;
+}
+
+/* Ajusta o layout para telas menores, como dispositivos móveis.*/
+
+@media screen and (max-width: 660px) {
+  .timeline {
+    width: 100%;
+    padding: 4em 0 1em 0;
+  }
+
+  .timeline li {
+    padding: 2em 0;
+  }
+
+  .direction-l,
+  .direction-r {
+    float: none;
+    width: 100%;
+    background-color: #252423c5;
+    text-align: center;
+    border-radius: 10%;
+    padding-top: 15px;
+  }
+
+  .flag-wrapper {
+    text-align: center;
+  }
+
+  .flag {
+    z-index: 15;
+  }
+
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    content: " ";
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-left: -9px;
+
+    border-radius: 10px;
+    border: 4px solid #c839c6;
+    z-index: 10;
+  }
+
+  .time-wrapper {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+  }
+
+  .direction-l .time-wrapper {
+    float: none;
+  }
+
+  .direction-r .time-wrapper {
+    float: none;
+  }
+
+  .desc {
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+
+    z-index: 15;
+  }
+
+  .direction-l .desc,
+  .direction-r .desc {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+
+    z-index: 15;
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------Projetos*/
+
+.articleDois {
+  background: linear-gradient(
+    to bottom,
+    rgb(243, 246, 247),
+    rgba(0, 0, 0, 0.1),
+    rgba(255, 255, 255, 0.637)
+  );
+}
+.h2-project {
+  font-family: "Gruppo", sans-serif;
+  margin-top: 30px;
+  font-size: 70px;
+  color: #8d62e9;
+}
+
+.h2-project-left {
+  font-family: "Gruppo", sans-serif;
+  margin-top: 30px;
+  font-size: 60px;
+  margin-left: 40px;
+  color: #c839c6;
+}
+
+.img-left {
+  margin-left: 40px;
+}
+
+.text {
+  margin-top: 70px;
+  margin-right: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #494440;
+}
+
+.text-left {
+  margin-top: 80px;
+  margin-left: 40px;
+  margin-right: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #494440;
+}
+.img-projeto {
+  max-width: 100%; /* Torna a largura máxima igual ao tamanho do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-left: 50px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.btn-code {
+  padding: 5px;
+  border-radius: 10%;
+  margin-right: 4px;
+  width: 100px;
+  background-color: #c839c6;
+}
+
+.btn-code-left {
+  padding: 5px;
+  border-radius: 10%;
+  margin-right: 4px;
+  margin-left: 40px;
+  width: 100px;
+  background-color: #8d62e9;
+}
+.btn-code-left-pink {
+  padding: 5px;
+  border-radius: 10%;
+  margin-right: 4px;
+  margin-left: 40px;
+  width: 100px;
+  background-color: #c839c6;
+}
+.btn-code a,
+.btn-code-left a,
+.btn-code-left-pink a {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  color: white;
+  text-decoration: none;
+}
+
+/*-----------------------------------------------------------CONTATO*/
+
+.form {
+  background-color: #2b142a3d;
+  margin-top: 30px;
+  padding: 60px;
+  border-radius: 20%;
+}
+label {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.form-control {
+  border-color: #8d62e9;
+  margin-bottom: 10px;
+}
+
+.h2-cont {
+  font-size: 70px;
+  font-family: "Oswald", sans-serif;
+  color: #8d62e9;
+}
+
+.btn2 {
+  margin-left: 30px;
+}
