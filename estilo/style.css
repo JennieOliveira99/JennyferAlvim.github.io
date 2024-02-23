@@ -107,6 +107,37 @@ h1,
   animation: slideInFromBottom 1s ease-in-out forwards;
 }
 
+
+/* Para telas menores que 768px de largura */
+@media only screen and (max-width: 768px) {
+  header {
+    height: 400px;
+  }
+
+  #titulo{
+    margin-top: 60px;
+    font-size: 40px;
+  }
+  #textinho,
+#textinho1 {
+  font-size: 30px;
+}
+
+.eu{
+  width: 600px;
+}
+
+}
+
+/* Para telas maiores ou iguais a 768px de largura */
+@media only screen and (min-width: 768px) {
+  header {
+    height: 100vh;
+  }
+
+}
+
+
 /*------------Animação dos primeiros textos*/
 @keyframes slideInFromBottom {
   0% {
@@ -155,6 +186,7 @@ h1,
   padding-top: 8px;
   padding-bottom: 8px;
   z-index: 1000;
+  margin-right: 0px;
 }
 
 .navbar-toggler-icon {
