@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-right:  0 !important;
+
+
 }
 
 body {
@@ -46,14 +47,14 @@ h1 {
 /*------------------------------------------------Video*/
 header {
   position: relative;
-  height: 100vh;
+  height: 800px;
   overflow: hidden;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  height: 100%;
+ 
 }
 
 .video-bg {
@@ -96,47 +97,11 @@ h1,
   font-family: "Josefin Sans", sans-serif;
 }
 
-#img-icon1,
-#img-icon2,
-#img-icon3,
-#img-icon4,
-#img-icon5,
-#img-icon6 {
-  position: relative; /* Adicione esta linha para garantir que a posição relativa seja respeitada */
-  transform: translate(-30%, -50%);
-  opacity: 0;
-  animation: slideInFromBottom 1s ease-in-out forwards;
-}
 
 
-/* Para telas menores que 768px de largura */
-@media only screen and (max-width: 768px) {
-  header {
-    height: 400px;
-  }
 
-  #titulo{
-    margin-top: 60px;
-    font-size: 40px;
-  }
-  #textinho,
-#textinho1 {
-  font-size: 30px;
-}
 
-.eu{
-  width: 600px;
-}
 
-}
-
-/* Para telas maiores ou iguais a 768px de largura */
-@media only screen and (min-width: 768px) {
-  header {
-    height: 100vh;
-  }
-
-}
 
 
 /*------------Animação dos primeiros textos*/
@@ -164,16 +129,17 @@ h1,
 }
 
 .social-icon {
-  margin-right: 10px;
+ 
   margin-bottom: 10px; /* Espaçamento entre os ícones */
   text-decoration: none;
   display: block;
 }
 
 .social-icon img {
-  width: 30px; /* Largura dos ícones */
-  height: 30px; /* Altura dos ícones*/
+  width: 40px; /* Largura dos ícones */
+  height: 40px; /* Altura dos ícones*/
   z-index: 1000;
+  margin-right: 25px;
 }
 .social-icon:hover img {
   transform: scale(1.5); /* tamanho */
@@ -182,12 +148,14 @@ h1,
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------nav*/
 .navbar {
-  background-color: #c839c6;
+  background-color: #a34ea2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.61);
   padding-top: 8px;
   padding-bottom: 8px;
   z-index: 1000;
-  margin-right: 0;
+  width: 105%;
+  
+
 }
 
 .navbar-toggler-icon {
@@ -204,7 +172,7 @@ h1,
   font-family: "gruppo";
   font-weight: bolder;
   font-size: 20px;
-  margin-left: 15px; /* Adicionando margem entre os links */
+  margin-right: 20px;
   transition: color 0.4s ease, text-decoration 0.3s ease; /* Adicionando transição suave */
 }
 
@@ -213,34 +181,19 @@ h1,
   text-decoration: underline; /* Adicionando linha ao passar o mouse */
 }
 
+
+
 /*------------------------------------------SOBRE MIM*/
 
 .articleUm {
   padding: 0;
-  background-color: #4743432a;
-}
-/*
-.front {
-  padding: 50px;
-  color: #fefffd;
-  font-family: "Black Ops One", system-ui;
-  margin-top: 160px;
-  margin-right: 30px;
-  font-size: 18px;
-  margin-left: 0;
-  margin-bottom: 45px;
-}*/
-/*
-.teste {
-  /*background-color: #8d62e9;
-  border: 2px solid #00000049;
-  /* border-top-right-radius: 50%; /* Raio alto para o canto superior esquerdo */
-/*border-bottom-right-radius: 50%; /* Raio alto para o canto inferior esquerdo */
-/* border-top-left-radius: 0; /* Manter o canto superior direito reto */
-/* border-bottom-left-radius: 0;*/
+  background: linear-gradient(to bottom, hsla(0, 2%, 38%, 0.249), #f3f3f38f);
 
+  width: 105%;
+  
+}
 .text-top {
-  padding-right: 10px;
+  padding-right: 50px;
   padding-left: 50px;
 }
 .h2-sobre {
@@ -254,17 +207,17 @@ h1,
 }
 
 .sobre-text {
-  color: #2f2843;
-  font-size: 18pxpx;
+  color: #17141f;
+  font-size: 20px;
   font-weight: lighter;
   opacity: 0.8;
   margin-left: 25px;
-  margin-right: 40px;
+ 
   font-family: "Roboto", sans-serif;
 }
 .sobre-text2 {
   color: #c839c6;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: lighter;
   opacity: 0.8;
   margin-left: 25px;
@@ -280,6 +233,7 @@ h1,
 
 .button {
   margin-top: 50px;
+ 
 }
 /* Estilos para botões personalizados */
 .custom-btn,
@@ -306,7 +260,7 @@ h1,
   /* Ajustes específicos de margem, posição e tamanho */
   margin-left: 50px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   right: 0px; /* Alinhamento à direita */
   bottom: 20px; /* Alinhamento na parte inferior */
   border: none; /* Remover borda */
@@ -377,8 +331,8 @@ h1,
   width: 100%; /* Alteração feita para permitir que o conteúdo se estenda completamente */
   padding-right: 55px;
   padding-left: 45px;
-  margin-right: auto;
-  margin-left: auto;
+
+  width: 105%;
   padding-bottom: 180px;
   background: linear-gradient(to bottom, #f3f3f38f, rgba(0, 0, 0, 0.151));
 }
@@ -435,9 +389,10 @@ h1,
 
 .text-white {
   background: linear-gradient(to top, #252423, rgba(0, 0, 0, 0.151));
+  width: 105%;
 }
 .img-tec {
-  margin-right: 25px;
+  margin-left: 25px;
   margin-bottom: 20px;
 }
 .h2-tec {
@@ -489,9 +444,13 @@ h1,
 /*---------------------------------------------------------------------------------------------------------------FORMAÇÃO*/
 .article-formacao {
   background-color: #252423;
+  width: 105%;
+  padding-right: 260px;
+
 
 }
 
+.formacao
 .h2-formacao {
   margin-left: 70px;
   margin-top: 70px;
@@ -746,6 +705,7 @@ h1,
     rgba(0, 0, 0, 0.1),
     rgba(255, 255, 255, 0.637)
   );
+  width: 105%;
 }
 .h2-project {
   font-family: "Gruppo", sans-serif;
@@ -768,7 +728,7 @@ h1,
 
 .text {
   margin-top: 70px;
-  margin-right: 45px;
+
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #494440;
@@ -777,7 +737,7 @@ h1,
 .text-left {
   margin-top: 80px;
   margin-left: 40px;
-  margin-right: 45px;
+ 
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #494440;
@@ -793,7 +753,7 @@ h1,
 .btn-code {
   padding: 5px;
   border-radius: 10%;
-  margin-right: 4px;
+
   width: 100px;
   background-color: #c839c6;
 }
@@ -801,7 +761,7 @@ h1,
 .btn-code-left {
   padding: 5px;
   border-radius: 10%;
-  margin-right: 4px;
+ 
   margin-left: 40px;
   width: 100px;
   background-color: #8d62e9;
@@ -809,7 +769,7 @@ h1,
 .btn-code-left-pink {
   padding: 5px;
   border-radius: 10%;
-  margin-right: 4px;
+
   margin-left: 40px;
   width: 100px;
   background-color: #c839c6;
@@ -826,7 +786,7 @@ h1,
 /*-----------------------------------------------------------CONTATO*/
 
 .form {
-  background-color: #2b142a3d;
+
   margin-top: 30px;
   padding: 60px;
   border-radius: 20%;
@@ -853,3 +813,5 @@ label {
 .btn2 {
   margin-left: 30px;
 }
+
+
