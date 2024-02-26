@@ -11,7 +11,17 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #f3f3f38f;
+background: linear-gradient(to bottom, 
+  hsla(0, 2%, 38%, 0.249), 
+  #f3f3f38f,
+  rgba(0, 0, 0, 0.975),
+  #939190c6,
+  rgba(234, 228, 228, 0.693),
+  rgb(157, 161, 162)
+);
+overflow-x: hidden;/*tirar barra de rolagem*/
+
+
 }
 
 #titulo {
@@ -149,11 +159,11 @@ h1,
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------nav*/
 .navbar {
   background-color: #a34ea2;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+
   padding-top: 8px;
   padding-bottom: 8px;
   z-index: 1000;
-  width: 105%;
+  width: 95em;
   
 
 }
@@ -168,6 +178,7 @@ h1,
 }
 
 .navbar-nav .nav-link {
+   text-transform: uppercase;
   color: #ffffff;
   font-family: "gruppo";
   font-weight: bolder;
@@ -187,8 +198,6 @@ h1,
 
 .articleUm {
   padding: 0;
-  background: linear-gradient(to bottom, hsla(0, 2%, 38%, 0.249), #f3f3f38f);
-
   width: 105%;
   
 }
@@ -232,7 +241,7 @@ h1,
 /* ANIMAÇAO E ESTILIZAÇÃO BOTOES 3D--------------*/
 
 .button {
-  margin-top: 50px;
+  margin-top: 40px;
  
 }
 /* Estilos para botões personalizados */
@@ -274,8 +283,9 @@ h1,
 /* Estilos para as partes animadas do botão */
 .btn-2 span {
   /* Estilos compartilhados para parte animada */
-  background: linear-gradient(
-    0deg,
+  
+
+    background: linear-gradient( 0deg,
     #c839c6 0%,
     #8d62e9 100%
   ); /* Gradiente de fundo */
@@ -329,12 +339,8 @@ h1,
 
 .section-servico {
   width: 100%; /* Alteração feita para permitir que o conteúdo se estenda completamente */
-  padding-right: 55px;
-  padding-left: 45px;
-
-  width: 105%;
   padding-bottom: 180px;
-  background: linear-gradient(to bottom, #f3f3f38f, rgba(0, 0, 0, 0.151));
+ 
 }
 
 .p-servico {
@@ -373,6 +379,7 @@ h1,
   height: 280px;
   width: 280px;
   margin-bottom: 10px;
+
 }
 
 .img-servico {
@@ -388,7 +395,7 @@ h1,
 }
 
 .text-white {
-  background: linear-gradient(to top, #252423, rgba(0, 0, 0, 0.151));
+  
   width: 105%;
 }
 .img-tec {
@@ -443,8 +450,7 @@ h1,
 
 /*---------------------------------------------------------------------------------------------------------------FORMAÇÃO*/
 .article-formacao {
-  background-color: #252423;
-  width: 105%;
+    width: 105%;
   padding-right: 260px;
 
 
@@ -499,13 +505,8 @@ h1,
   height: 100%;
   margin-left: -3px;
   background: #c9df25; /* Cor sólida */
-  background: linear-gradient(
-    to bottom,
-    rgba(201, 223, 37, 0) 0%,
-    rgba(201, 223, 37, 1) 8%,
-    rgba(201, 223, 37, 1) 92%,
-    rgba(201, 223, 37, 0) 100%
-  );
+  
+
 }
 
 /*Define o preenchimento e estilo para os itens da linha do tempo.*/
@@ -699,12 +700,8 @@ h1,
 /*---------------------------------------------------------------------------------------------------------------------Projetos*/
 
 .articleDois {
-  background: linear-gradient(
-    to bottom,
-    rgb(243, 246, 247),
-    rgba(0, 0, 0, 0.1),
-    rgba(255, 255, 255, 0.637)
-  );
+  
+
   width: 105%;
 }
 .h2-project {
@@ -813,5 +810,6 @@ label {
 .btn2 {
   margin-left: 30px;
 }
+
 
 
