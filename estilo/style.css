@@ -8,6 +8,16 @@
 
 }
 
+.navbar, header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding-right: 0; /* Remova o padding direito */
+}
+
+
+
 body {
   padding: 0;
   margin: 0;
@@ -19,7 +29,7 @@ background: linear-gradient(to bottom,
   rgba(234, 228, 228, 0.693),
   rgb(157, 161, 162)
 );
-overflow-x: hidden;/*tirar barra de rolagem*/
+/*overflow-x: hidden;/*tirar barra de rolagem*/
 
 
 }
@@ -55,11 +65,12 @@ h1 {
 }
 
 /*------------------------------------------------Video*/
-header {
+.section-video {
   position: relative;
   height: 800px;
   overflow: hidden;
 }
+
 
 .video-container {
   position: relative;
@@ -157,25 +168,49 @@ h1,
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------nav*/
-.navbar {
-  background-color: #a34ea2;
+header {
+  background-color: #8d62e9;
+  height: 4.5em;
+  margin-bottom: 3em;
+  font-family: 'kaisei tokumin', serif;
+  font-size: large;
+  margin-right: 0;
+}
 
-  padding-top: 8px;
-  padding-bottom: 8px;
-  z-index: 1000;
-  width: 95em;
-  
+
+
+
+nav ul li a:hover {
+  color: #ffffff;
+
 
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  font-family: 'kaisei tokumin', serif;
+  background-color: #8d62e9;
+  text-transform: uppercase;
+  padding: 12px;
+
 }
 
-.navbar-nav {
-  display: flex; /* Usando Flexbox para layout */
-  justify-content: flex-end; /* Alinhando os itens à direita */
+.nav-item a:hover {
+  color: #777777;
+  font-family: 'kaisei tokumin', serif;
+
 }
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+}
+
+nav {
+  text-align: left;
+  display: inline;
+}
+
 
 .navbar-nav .nav-link {
    text-transform: uppercase;
@@ -196,15 +231,11 @@ h1,
 
 /*------------------------------------------SOBRE MIM*/
 
-.articleUm {
-  padding: 0;
-  width: 105%;
-  
-}
 .text-top {
   padding-right: 50px;
   padding-left: 50px;
 }
+
 .h2-sobre {
   color: #8d62e9;
   font-size: 60px;
@@ -338,7 +369,7 @@ h1,
 /*-------------------------------------------------------------------------------------------------SERVIÇOS*/
 
 .section-servico {
-  width: 100%; /* Alteração feita para permitir que o conteúdo se estenda completamente */
+  /*width: 100%; /* Alteração feita para permitir que o conteúdo se estenda completamente */
   padding-bottom: 180px;
  
 }
@@ -393,11 +424,11 @@ h1,
 .text-white {
   position: relative; /* Definindo a seção como relativa */
 }
-
+/*
 .text-white {
   
-  width: 105%;
-}
+ /* width: 105%;
+}*/
 .img-tec {
   margin-left: 25px;
   margin-bottom: 20px;
@@ -450,7 +481,7 @@ h1,
 
 /*---------------------------------------------------------------------------------------------------------------FORMAÇÃO*/
 .article-formacao {
-    width: 105%;
+   /* width: 105%;*/
   padding-right: 260px;
 
 
