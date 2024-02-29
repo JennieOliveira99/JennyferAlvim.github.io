@@ -8,6 +8,7 @@
 
 }
 
+
 .navbar, header{
   position: fixed;
   width: 100%;
@@ -21,6 +22,8 @@
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+
 background: linear-gradient(to bottom, 
   hsla(0, 2%, 38%, 0.249), 
   #f3f3f38f,
@@ -31,7 +34,12 @@ background: linear-gradient(to bottom,
 );
 /*overflow-x: hidden;/*tirar barra de rolagem*/
 
+}
 
+@media only screen and (max-width: 768px) {
+  body {
+      font-size: 50px; /* Tamanho maior da fonte para telas pequenas */
+  }
 }
 
 #titulo {
@@ -168,13 +176,14 @@ h1,
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------nav*/
-header {
+#header {
   background-color: #8d62e9;
-  height: 4.5em;
+  height: 5em;
   margin-bottom: 3em;
   font-family: 'kaisei tokumin', serif;
   font-size: large;
   margin-right: 0;
+  width: 100%;
 }
 
 
@@ -182,8 +191,6 @@ header {
 
 nav ul li a:hover {
   color: #ffffff;
-
-
 }
 
 
@@ -510,7 +517,7 @@ nav {
 /* Define sua posição, largura, margens, preenchimento e remove a estilização padrão da lista.*/
 
 .timeline {
-  font-size: 18px;
+  font-size: 2em;
   line-height: 1.6em;
   position: relative;
   max-width: 660px; /* Alterado de width para max-width */
@@ -522,7 +529,7 @@ nav {
 }
 
 .time {
-  font-size: 14px;
+  font-size: 1em;
 }
 
 /*Adiciona uma linha vertical no centro da linha do tempo usando pseudoelemento :before.*/
@@ -611,7 +618,7 @@ nav {
 .time-wrapper {
   display: inline;
   line-height: 1em;
-  font-size: 0.66666em;
+  font-size: 1em;
   color: #2f2843;
   vertical-align: middle;
 }
@@ -636,7 +643,7 @@ nav {
 
 .link-grade {
   color: #dde3eb;
-  font-size: 20px;
+  font-size: 1em;
   margin-top: 20px;
   background-color: #c839c6;
   padding: 5px;
