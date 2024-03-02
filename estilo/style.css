@@ -39,13 +39,7 @@ background: linear-gradient(to bottom,
 
 
 
-p {
-  font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  font-weight: bolder;
-  font-size: 1em;
-  color: #192429;
-}
 
 h2 {
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -92,7 +86,7 @@ h1 {
   height: 100vh;
   object-fit: cover;
 }
-
+/*
 .header-texts {
   position: absolute;
   top: 50%;
@@ -100,7 +94,7 @@ h1 {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
-}
+}*/
 
 .hidden {
   display: none;
@@ -243,17 +237,17 @@ nav {
 
 .h2-sobre {
   color: #8d62e9;
-  font-size: 60px;
+  font-size:2.5em;
   margin-left: 25px;
   margin-bottom: 45px;
   font-family: "";
-  margin-top: 70px;
+  margin-top: 20px;
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .sobre-text {
   color: #17141f;
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: lighter;
   opacity: 0.8;
   margin-left: 25px;
@@ -267,8 +261,9 @@ nav {
   opacity: 0.8;
   margin-left: 25px;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 45px;
+  padding-bottom: 5px;
 }
+
 
 .img-bottom {
   margin-left: -11px;
@@ -396,7 +391,7 @@ nav {
 }
 
 .p-servico {
-  font-size: 1.7em;
+  font-size: 1.6em;
   color: #fdfdfd;
   font-weight: lighter;
   opacity: 0.8;
@@ -408,9 +403,9 @@ nav {
 .h3-servico {
   font-family: "Gruppo", sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.9em;
   color: #ffffff;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 
@@ -495,7 +490,7 @@ nav {
 }
 
 .text-tec {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #fdfdfd;
   font-weight: lighter;
   opacity: 0.8;

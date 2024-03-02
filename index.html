@@ -89,12 +89,11 @@
     
       <div class="col-12 col-lg-5  order-lg-2 ">
         <div class="content-wrapper text-top">
-          <h2 class="h2-sobre"> Eu sou a Jennyfer Alvim</h2>
-          <p class="sobre-text text-md">Nasci em 13/03/1999 em SP, e durante os anos
-             fui de uma criança curiosa, para um adulta apaixonada por aprender sempre algo novo, 
-             e na Tecnologia, onde há sempre algo a ser desenvolvido, eu me encontrei!<br>
-            Eu faço arte desde os 7 anos.
-            Agora faço arte através dos códigos.<br></p>
+          <h2 class="h2-sobre "> Eu sou a Jennyfer Alvim</h2>
+          <p class="sobre-text text-xl">Nasci em 13/03/1999 em SP e desde a infância, cultivo uma curiosidade insaciável,
+             evoluindo para uma adulta ávida por conhecimento. Encontrei minha vocação na tecnologia,
+              onde enxergo um mundo infinito de possibilidades para criação. Desde os 7 anos sou artista autodidata, meu interesse pela arte floresceu e hoje, traduzo
+               essa paixão através da linguagem dos códigos.".<br></p>
             <p class="sobre-text2">O próximo objetivo: Ingressar na área DEV!</p>
           <button class="custom-btn btn-2" onclick="downloadPDF()"><span>Resume</span><span>Download </span></button>
         </div>
@@ -147,7 +146,7 @@
             <h3 class="h3-servico">Desenvolvimento</h3>
             <p class="p-servico">Desenvolvimento de Sites;<br>
                                   Otimização de Performance; <br>
-                                  Manutenção e Suporte para Websites e Aplicações.</p>
+                                  Manutenção e Suporte para Websites e Aplicações.<br><br></p>
           </div>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12  me-3 mb-3">
@@ -157,7 +156,7 @@
             <h3 class="h3-servico">Banco de Dados</h3>
             <p class="p-servico">Desenvolvimento de Banco de Dados;<br>
                                 Modelagem de Dados; <br>
-                               Administração de Banco de Dados SQL Server e MySQL.</p>
+                               Administração de Banco de Dados SQL Server e MySQL.<br><br><br></p>
           </div>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12  me-3 mb-3">
@@ -165,7 +164,7 @@
             <!-- Conteúdo da terceira seção -->
             <img class="img-servico" src="./img/collaboration.png" width="80px"  alt="Descrição da Imagem">
             <h3 class="h3-servico">UI/UX</h3>
-            <p class="p-servico">Prototipagem Interativa;.<br>
+            <p class="p-servico">Prototipagem Interativa;<br>
                                   Arquitetura de Software;<br>
                                   Experiência do Usuário;
                                   Documentação de Software.</p>
@@ -362,7 +361,7 @@
   <article id="Projeto" class="articleDois">
     <div class="container-fluid">
       <div class="row">
-        <h2 class="text-center h2-topicos text-dark">Projetos</h2>
+        <h2 class="text-center h2-topicos">Projetos</h2>
 
 
         <div class="container-fluid">
@@ -461,38 +460,52 @@
     </div>
   
   </article>
-<section id="Contato" class="section-form">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-7 col-sm-10 col-12">
-        <h2 class="text-center h2-cont">Contato</h2>
-        <form class="form" action="https://api.web3forms.com/submit" method="POST" class="form">
-          <div class="form-group">
-            <input type="hidden" name="access_key" value="66c7ca2d-9df3-4f14-931b-f06e4baf1286">
-            <label for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
-          </div>
 
-          <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
-          </div>
+  
+  <article id="Contato" class="articleContato">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 text-center">
+          <h2 class="h2-contato">Entre em Contato</h2>
+          <p class="texto-contato">Você tem algum projeto em mente ou gostaria de trabalhar comigo?</p>
+          <p class="texto-contato">Fique à vontade para me enviar uma mensagem!</p>
 
-          <div class="form-group">
-            <label for="mensagem">Mensagem:</label>
-            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+          <div class="social-media-icons">
+            <a href="https://www.linkedin.com/in/jennyfer-alvim-de-oliveira-800441263">
+              <img class="img-left"  src="./img/githubb.png" width="40px" alt="Tecnologia 1">
+            </a>
+            <a href="https://github.com/JennieOliveira99">
+              <img class="img-left"  src="./img/githubb.png" width="40px" alt="Tecnologia 1">
+            </a>
+            <a href="mailto:jennyferalvim@gmail.com">
+              <img class="img-left"  src="./img/githubb.png" width="40px" alt="Tecnologia 1">
+            </a>
           </div>
-
-          <button type="submit" class="btn2 btn-primary custom-btn btn-2">
-            <span>E-mail</span>
-            <span>Send</span>
-          </button>
-         
-        </form>
+        </div>
+        <div class="col-12 col-lg-6">
+          <form id="form-contato" action="sendemail.php" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Seu Email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua Mensagem"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </article>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2024 - Jennyfer Alvim. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
 
   <script src="script/script.js"></script>
