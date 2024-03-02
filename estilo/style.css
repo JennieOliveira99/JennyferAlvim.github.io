@@ -376,62 +376,9 @@ nav {
 
 
 .section-servico {
-  /*width: 100%; /* Alteração feita para permitir que o conteúdo se estenda completamente */
-  padding-bottom: 380px;
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 140px ; 
-  margin-bottom: 300px;
+  padding-bottom: 50px; /* Reduzindo o padding inferior para reduzir o espaço extra */
+  margin-bottom: 100px; /* Adicionando um espaço extra após a seção de serviços */
 }
-
-.p-servico {
-  font-size: 1.7em;
-  color: #fdfdfd;
-  font-weight: lighter;
-  opacity: 0.8;
-  margin-left: 10px;
-  font-family: "Roboto", sans-serif;
-}
-/*
-.h2-service {
-  margin-top: 70px;
-  font-size: 70px;
-  margin-bottom: 45px;
-  font-family: "Oswald", sans-serif;
-  color: #8d62e9;
-}*/
-
-.h3-servico {
-  font-family: "Gruppo", sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  color: #ffffff;
-  margin-left: 50px;
-}
-/*
-.servico-item1,
-.servico-item2,
-.servico-item3,
-.servico-item4 {
-  background-color: #252423;
-  padding: 5px;
-  margin: 20px 0;
-  border-radius: 10%;
-  height: 25em;
-  width: 25em;
-  margin-bottom: 10px;
-  
-}*/
-
-.img-servico {
- align-items: center;
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-
-
-
 
 .servico-item1,
 .servico-item2,
@@ -442,11 +389,40 @@ nav {
   height: auto;
   overflow: hidden;
   border-radius: 15px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  margin: 0 auto 20px; /* Adicionando margin-bottom apenas para os itens de serviço */
+  padding: 40px 20px; /* Removendo o padding fixo */
   box-shadow: 0 10px 15px rgba(0,0,0,0.3);
   transition: .5s;
 }
+
+.p-servico {
+  font-size: 1.7em;
+  color: #fdfdfd;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.h3-servico {
+  font-family: "Gruppo", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  margin-left: 50px;
+}
+
+
+.img-servico {
+ align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+
+
+
 .servico-item1:hover,
 .servico-item2:hover,
 .servico-item3:hover,
@@ -490,7 +466,7 @@ nav {
 
 /*------------------------------------------------------------------------------------------------- TECNOLOGIAS*/
 #Tecnologia{
-margin-top: 200px;
+/*margin-top: 200px;*/
 }
 
 /*
