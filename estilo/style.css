@@ -73,7 +73,7 @@ h1 {
 }
 
 .video-bg {
-  opacity: 0.3;
+  opacity: 0.2;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -855,16 +855,16 @@ nav {
  
 }
 
-.tezte{
+
+
+.tect{
   background: rgba(255, 255, 255, 0.5); /* Cor de fundo com opacidade */
   backdrop-filter: blur(10px); /* Aplicando o filtro de desfoque */
-  border-radius: 0 0 10px 10px; /* Borda arredondada (opcional) */
-
   padding-right: 40px;
-  padding-top:150px;
-  padding-bottom: 150px;
+  padding-top:100px;
+  padding-bottom: 100px;
+  border-radius: 10px 290px 10px 290px;
 }
-
 
 .texto-contato{
   font-size: 1.5em;
@@ -873,7 +873,7 @@ label {
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 35px;
   color: #8d62e9;
 }
 
@@ -893,6 +893,12 @@ label {
 }
 
 
+.btn-enviar{
+  background-color: #000000;
+}
 
+.img-cont{
+  opacity: 0.9;
 
-
+ 
+}
