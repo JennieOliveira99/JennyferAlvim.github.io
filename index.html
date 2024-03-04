@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Scandia+Web&display=swap">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="estilo/style.css" />
+  
   <title>🖥️Jennyfer</title>
 </head>
 
@@ -221,9 +222,11 @@
                     Experiência com as ferramentas: 3 anos.
                   </p>
 
-                  <h3 class="h3-tec">Design e Prototipagem</h3>
+                  <h3 class="h3-tec">UI UX</h3>
                   <p class="text-tec">
-                    Usando o Figma para produzir protótipos e simular interações do usuário. Usando o CorelDraw para criar e editar imagens.<br>
+                                      Usando o Figma para produzir protótipos e simular interações do usuário.<br>
+                                      Experiência em projetar interfaces visuais com recursos de acessibilidade.
+                                      Uso do CorelDraw e Canva para criar e editar imagens.<br>
                     Experiência com as ferramentas: 3 anos.
                 </div>
 
@@ -265,7 +268,7 @@
 
                   <h3 class="h3-tec">Análise de Requisitos</h3>
                   <p class="text-tec">
-                   Utilizo Visio e Draw.io para criar vários diagramas UML estruturais e comportamentais, como: Diagrama de Componentes, Diagrama de Estado, Diagrama de Caso de Uso, Diagrama de Sequência, entre outros.<br>
+                   Utilizo Visio e Draw.io para projetar Arquitetura da Informação, criar vários diagramas UML estruturais e comportamentais, como: Diagrama de Componentes, Diagrama de Estado, Diagrama de Caso de Uso, Diagrama de Sequência, entre outros.<br>
                    Experiência com a ferramenta: 3 anos.
                   </p>
 
@@ -295,7 +298,7 @@
 
       <div class="row justify-content-center align-items-center" >
         <div class="col-sm-12 p-3 offset-md-2">
-          <h2 class=" text-center h2-topicos text-white">Formação</h2>
+          <h2 class=" text-center h2-formacao text-white">Formação</h2>
 
           <!-- The Timeline -->
           <div class="formacao">
@@ -359,7 +362,7 @@
 
 
   <article id="Projeto" class="articleDois">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <h2 class="text-center h2-topicos">Projetos</h2>
 
@@ -424,7 +427,10 @@
   </div>
   </div>
 
-  
+  <section class="outro-pro">
+
+    
+  </section>
   
         <div class="container-fluid">
           <div class="row">
@@ -440,7 +446,7 @@
   
   
               <p class="text-left">Audiolivro personalizável onde o usuário seleciona a obra, pausa, avança, retrocede, reproduz novamente, feito em JavaScript, HTML, CSS e Bootstrap. Está em desenvolvimento, com previsão de conclusão em abril de 2024. Você pode acompanhar o desenvolvimento através do meu GitHub.</p>
-              <button class="btn-code-left"><a href="#" download>Deploy</a></button>
+              <button class="btn-code-left"><a href="./Audiobook/index.html" download>Deploy</a></button>
               <button class="btn-code-left-pink"><a href="https://github.com/JennieOliveira99/Audiobook" target="_blank">Code</a></button>
   
             </div>
@@ -465,32 +471,37 @@
   <article id="Contato" class="articleContato">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 text-center">
+        <div class="col-12 col-lg-6 text-center tezte">
           <h2 class="h2-contato">Entre em Contato</h2>
           <p class="texto-contato">Você tem algum projeto em mente ou gostaria de trabalhar comigo?</p>
           <p class="texto-contato">Fique à vontade para me enviar uma mensagem!</p>
 
           <div class="social-media-icons">
-            <a href="https://www.linkedin.com/in/jennyfer-alvim-de-oliveira-800441263">
+            <a href="https://www.linkedin.com/in/jennyfer-alvim-de-oliveira-800441263" target="_blank">
+              <img class="img-left"  src="./img/linkedin.png" width="40px" alt="Tecnologia 1">
+            </a>
+            <a href="https://github.com/JennieOliveira99" target="_blank">
               <img class="img-left"  src="./img/githubb.png" width="40px" alt="Tecnologia 1">
             </a>
-            <a href="https://github.com/JennieOliveira99">
-              <img class="img-left"  src="./img/githubb.png" width="40px" alt="Tecnologia 1">
-            </a>
-            <a href="mailto:jennyferalvim@gmail.com">
-              <img class="img-left"  src="./img/githubb.png" width="40px" alt="Tecnologia 1">
-            </a>
+           
+          </div>
+
+          <div class="img-cont">
+
+            <img class="img-left"  src="./img/githubb.png" width="90px" height="90" alt="Tecnologia 1">
           </div>
         </div>
-        <div class="col-12 col-lg-6">
-          <form id="form-contato" action="sendemail.php" method="POST">
+        <div class="col-12 col-lg-6 tezte">
+          <form class="form" action="https://api.web3forms.com/submit" method="POST" class="form">
             <div class="form-group">
-              <input type="text" class="form-control" id="name" name="name" placeholder="Seu Nome" required>
+              <label for="email ">E-mail:</label>
+              <input type="hidden" name="access_key" value="66c7ca2d-9df3-4f14-931b-f06e4baf1286">
             </div>
             <div class="form-group">
               <input type="email" class="form-control" id="email" name="email" placeholder="Seu Email" required>
             </div>
             <div class="form-group">
+              <label for="mensagem ">Mensagem:</label>
               <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua Mensagem"
                 required></textarea>
             </div>

@@ -32,18 +32,15 @@ background: linear-gradient(to bottom,
   rgba(234, 228, 228, 0.693),
   rgb(157, 161, 162)
 );
-/*overflow-x: hidden;/*tirar barra de rolagem*/
+overflow-x: hidden;/*tirar barra de rolagem*/
 
 }
-
-
-
-
 
 
 h2 {
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: bold;
+  color: #8d62e9;
 }
 
 h1 {
@@ -266,7 +263,7 @@ nav {
 
 
 .img-bottom {
-  margin-left: -11px;
+  margin-left: 0;
 }
 /*botao*/
 /* ANIMAÇAO E ESTILIZAÇÃO BOTOES 3D--------------*/
@@ -527,14 +524,14 @@ nav {
 
 }
 
-.formacao
+
 .h2-formacao {
   margin-left: 70px;
   margin-top: 70px;
   font-size: 70px;
   margin-bottom: 15px;
   font-family: "Roboto", sans-serif;
-  color: #8d62e9;
+  color: #c839c6;
 }
 /*Estiliza a descrição associada a cada evento na linha do tempo.*/
 .desc {
@@ -651,7 +648,7 @@ nav {
 .time-wrapper {
   display: inline;
   line-height: 1em;
-  font-size: 1em;
+  font-size: 0.444em;
   color: #2f2843;
   vertical-align: middle;
 }
@@ -853,34 +850,49 @@ nav {
 
 /*-----------------------------------------------------------CONTATO*/
 
-.form {
+.articleContato {
+  margin-bottom: 150px;
+ 
+}
 
-  margin-top: 30px;
-  padding: 60px;
-  border-radius: 20%;
+.tezte{
+  background: rgba(255, 255, 255, 0.5); /* Cor de fundo com opacidade */
+  backdrop-filter: blur(10px); /* Aplicando o filtro de desfoque */
+  border-radius: 0 0 10px 10px; /* Borda arredondada (opcional) */
+
+  padding-right: 40px;
+  padding-top:150px;
+  padding-bottom: 150px;
+}
+
+
+.texto-contato{
+  font-size: 1.5em;
 }
 label {
-  font-size: 20px;
+  font-size: 1.5em;
   font-family: "Roboto", sans-serif;
-
   margin-bottom: 5px;
   margin-top: 5px;
+  color: #8d62e9;
 }
 
 .form-control {
   border-color: #8d62e9;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.h2-cont {
-  font-size: 70px;
-  font-family: "Oswald", sans-serif;
+.h2-contato {
+  font-size: 3.5em;
+
   color: #8d62e9;
 }
 
-.btn2 {
-  margin-left: 30px;
+.img-cont {
+  margin-top: 30px;
 }
+
+
 
 
 

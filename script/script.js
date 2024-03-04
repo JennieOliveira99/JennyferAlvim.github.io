@@ -8,27 +8,15 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById("textinho1").style.opacity = "1";
 
         /*icones*/
-        document.getElementById("img-icon1").classList.remove("hidden");
-        document.getElementById("img-icon1").style.opacity = "1";
+        document.getElementById("button1").classList.remove("hidden");
+        document.getElementById("button2").style.opacity = "1";
         
-        document.getElementById("img-icon2").classList.remove("hidden");
-        document.getElementById("img-icon2").style.opacity = "1";
-        
-
-        document.getElementById("img-icon3").classList.remove("hidden");
-        document.getElementById("img-icon3").style.opacity = "1";
+        document.getElementById("button2").classList.remove("hidden");
+        document.getElementById("button2").style.opacity = "1";
         
 
-        document.getElementById("img-icon4").classList.remove("hidden");
-        document.getElementById("img-icon4").style.opacity = "1";
-        
-
-        document.getElementById("img-icon5").classList.remove("hidden");
-        document.getElementById("img-icon5").style.opacity = "1";
-        
-
-        document.getElementById("img-icon6").classList.remove("hidden");
-        document.getElementById("img-icon6").style.opacity = "1";
+   
+       // document.getElementById("button").style.opacity = "1";
         
        
      
@@ -37,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 let textosDosAlertas = [
-  "Programming Foundation:\nAlgorithms and Programming Logic, Web Content Creation, Networks and Internet, Data Structures with PHP, SQL Server and Management Studio, Software Engineering for the Web, Internet Basics, Digital Design, Business and Marketing, Electronics, Internet Business Creation, Servers and their Operating Systems, Project Management Practices, Internet Site Design Patterns, Accessibility, Reading and Text Production, English\n\nMathematics:\n Fundamentals of Elementary Mathematics, Discrete Mathematics, Statistics.\n\nSecurity:\n Internet Systems Security, Legislation Applied to the Internet.\n\nDevelopment: \nNavigation and Interaction Design, Development for Devices, Development for Servers, Prototyping and Usability Testing, Service-Oriented Architecture, Findability Design, Internet Site Design Patterns (HTML, CSS, JavaScript).",
-  "Programming Foundation:\n System Development, Systems Analysis and Design, Internet and Protocols, Computer Fundamentals, Instrumental English, Portuguese Language, Work and Technology, Programming Techniques, Programming and Algorithms.\n\n Development: \n Mobile Application Programming I, II, III (Mobile) with Csharp, Web Programming (HTML, CSS, and JavaScript), Database I, II, III (MySQL), Digital Design (Gimp, Fireworks), Embedded Systems, Software Quality and Testing. ",
-  "CorelDraw by Share Institute (ended - 2020)\n\n Cybersecurity Essentials by LINUX FOUNDATION (ended - 2024):\n Cybersecurity Awareness, Malware, Cybersecurity Breaches, Protection and Prevention, Mobile Device Security, Social Network Safety, Prevention Software.\n\n AI Generative by LinkedIn Learning\n Search Engine Technology Fundamentals, Generative AI Fundamentals."
+  "Fundação de Programação:\nAlgoritmos e Lógica de Programação, Criação de Conteúdo Web, Redes e Internet, Estruturas de Dados com PHP, SQL Server e Management Studio, Engenharia de Software para a Web, Noções Básicas de Internet, Design Digital, Negócios e Marketing, Eletrônica, Criação de Negócios na Internet, Servidores e seus Sistemas Operacionais, Práticas de Gerenciamento de Projetos, Padrões de Design de Sites na Internet, Acessibilidade, Leitura e Produção de Texto, Inglês\n\nMatemática:\n Fundamentos da Matemática Elementar, Matemática Discreta, Estatística.\n\nSegurança:\n Segurança de Sistemas de Internet, Legislação Aplicada à Internet.\n\nDesenvolvimento: \nDesign de Navegação e Interação, Desenvolvimento para Dispositivos, Desenvolvimento para Servidores, Prototipagem e Testes de Usabilidade, Arquitetura Orientada a Serviços, Design de Localização, Padrões de Design de Sites na Internet (HTML, CSS, JavaScript).",
+  "Fundação de Programação:\n Desenvolvimento de Sistemas, Análise e Projeto de Sistemas, Internet e Protocolos, Fundamentos de Computação, Inglês Instrumental, Língua Portuguesa, Trabalho e Tecnologia, Técnicas de Programação, Programação e Algoritmos.\n\n Desenvolvimento: \nProgramação de Aplicativos Móveis I, II, III (Mobile) com Csharp, Programação Web (HTML, CSS e JavaScript), Banco de Dados I, II, III (MySQL), Design Digital (Gimp, Fireworks), Sistemas Embarcados, Qualidade de Software e Testes. ",
+  "CorelDraw pelo Instituto Share (concluído - 2020)\n\n Fundamentos de Cibersegurança pela LINUX FOUNDATION (concluído - 2024):\n Conscientização em Cibersegurança, Malware, Violações de Segurança Cibernética, Proteção e Prevenção, Segurança de Dispositivos Móveis, Segurança de Redes Sociais, Software de Prevenção.\n\n IA Generativa pelo LinkedIn Learning\n Fundamentos de Tecnologia de Motores de Busca, Fundamentos de IA Generativa."
 ];
 
 // Obtendo uma coleção de elementos com a classe "link-grade"
