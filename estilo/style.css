@@ -121,24 +121,6 @@ overflow-x: hidden;/*tirar barra de rolagem*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 h2 {
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: bold;
@@ -937,19 +919,43 @@ label {
 @media only screen and (max-width: 400px) {
 
   /* tipografia */
-
+*{
+  padding: 0;
+  margin: 0;
+overflow-x: hidden;/*problema do width*/
+}
   p{
     font-size: 21px;
 
   }
-
-.header{
+body{
   max-width: 400px;
 }
+/*==============================NAV*/
 
+#header{
+  max-width: 400px;/*problema do width*/
+  height: 50px;
+
+background-color: #00000000;
+}
+.img-nav{
+  display: none;
+}
+.navbar-toggler{
+  margin-left: 6px;
+  margin-top: 30px;
+  background-color: #8d62e9;
+}
+
+.navbar{
+  background-color: #00000000;
+}
+
+/*=========================VIDEO*/
 .section-video{
- height: 400px;
-
+ max-width: 400px;
+height: 400px;
 }
 
 
@@ -964,18 +970,24 @@ label {
  #textinho1{
   font-size: 19px;
  }
-  /* SOBRE */
+  /* =======================================================SOBRE */
   .articleUm{
-    padding-right: 23px;
+ max-width: 400px;
+ margin: 0;
+
   }
+
+
   .h2-sobre {
     font-size: 32px;
-   
+   margin-left: 0;
   }
 
   
   .sobre-text {
     font-size: 18px;
+    margin-left: 0;
+
   }
 
   .btn-2{
@@ -986,9 +998,37 @@ label {
    max-width: 300px;
    margin-left: -20px;
   }
+/*trocar*/
+  .btn-2{
+    width: 200px;
+    height: 50px;
+  }
+  /*============================================= Estilos para .link */
+  /*.links{
+    display: none;
+  }
+ */
+ .social-links {
+  position: fixed;
+ left: 0;
+  /*transform: translateY(-50%);*/
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 900;
+}
+ .social-icon img {
+  width: 20px; /* Largura dos ícones */
+  height: 20px; /* Altura dos ícones*/
+  z-index: 1000;
+  margin-right: 25px;
+}
 
-  /* Estilos para .link */
- 
+.social-icon:hover img {
+ display: none;
+}
+
+
   /* Estilos para .section-servico */
   .section-servico {
     font-size: 11px;
