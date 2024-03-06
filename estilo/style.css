@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Gruppo&family=Josefin+Sans:wght@300&family=Oswald&family=Rokkitt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 
 * {
   margin: 0;
@@ -16,13 +17,19 @@
   z-index: 1000;
   padding-right: 0; /* Remova o padding direito */
 }
-
+p{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+ 
+}
 
 
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   width: 100%;
+  
 
 background: linear-gradient(to bottom, 
   hsla(0, 2%, 38%, 0.249), 
@@ -35,6 +42,101 @@ background: linear-gradient(to bottom,
 overflow-x: hidden;/*tirar barra de rolagem*/
 
 }
+
+
+
+
+
+
+/* Skills Section
+********************************************************************* */
+#skills {
+	padding-top: 10px;
+}
+
+.progressBar {
+	margin-bottom: 20px; /* Ajuste conforme necessário */
+}
+
+.progressBar h4 {
+	font-size: 16px;
+	text-transform: none;
+	margin-bottom: 5px; /* Ajuste conforme necessário */
+}
+
+.progressBarValue {
+	height: 8px;
+	float: left;
+	background: #e55d87; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+}
+.value-00 {
+	width: 0;
+}
+.value-10 {
+	width: 10%;
+}
+.value-20 {
+	width: 20%;
+}
+.value-30 {
+	width: 30%;
+}
+.value-40 {
+	width: 40%;
+}
+.value-50 {
+	width: 50%;
+}
+.value-60 {
+	width: 60%;
+}
+.value-70 {
+	width: 70%;
+}
+.value-80 {
+	width: 80%;
+}
+.value-90 {
+	width: 90%;
+}
+.value-100 {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 h2 {
@@ -101,7 +203,6 @@ h1,
 #textinho,
 #textinho1 {
   position: relative;
-  opacity: 0;
   animation: slideInFromBottom 1s ease-in-out forwards;
   text-align: center;
 }
@@ -114,9 +215,6 @@ h1,
   font-size: 3em;
   font-family: "Josefin Sans", sans-serif;
 }
-
-
-
 
 
 
@@ -685,85 +783,6 @@ nav {
 
 /* Ajusta o layout para telas menores, como dispositivos móveis.*/
 
-@media screen and (max-width: 660px) {
-  .timeline {
-    width: 100%;
-    padding: 4em 0 1em 0;
-  }
-
-  .timeline li {
-    padding: 2em 0;
-  }
-
-  .direction-l,
-  .direction-r {
-    float: none;
-    width: 100%;
-    background-color: #252423c5;
-    text-align: center;
-    border-radius: 10%;
-    padding-top: 15px;
-  }
-
-  .flag-wrapper {
-    text-align: center;
-  }
-
-  .flag {
-    z-index: 15;
-  }
-
-  .direction-l .flag:before,
-  .direction-r .flag:before {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    content: " ";
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin-left: -9px;
-
-    border-radius: 10px;
-    border: 4px solid #c839c6;
-    z-index: 10;
-  }
-
-  .time-wrapper {
-    display: block;
-    position: relative;
-    margin: 4px 0 0 0;
-    z-index: 14;
-  }
-
-  .direction-l .time-wrapper {
-    float: none;
-  }
-
-  .direction-r .time-wrapper {
-    float: none;
-  }
-
-  .desc {
-    position: relative;
-    margin: 1em 0 0 0;
-    padding: 1em;
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-
-    z-index: 15;
-  }
-
-  .direction-l .desc,
-  .direction-r .desc {
-    position: relative;
-    margin: 1em 1em 0 1em;
-    padding: 1em;
-
-    z-index: 15;
-  }
-}
 
 /*---------------------------------------------------------------------------------------------------------------------Projetos*/
 
@@ -851,7 +870,7 @@ nav {
 /*-----------------------------------------------------------CONTATO*/
 
 .articleContato {
-  margin-bottom: 150px;
+  margin-bottom: 80px;
  
 }
 
@@ -862,24 +881,31 @@ nav {
   backdrop-filter: blur(10px); /* Aplicando o filtro de desfoque */
   padding-right: 40px;
   padding-top:100px;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   border-radius: 10px 290px 10px 290px;
+  
 }
+
+
 
 .texto-contato{
   font-size: 1.5em;
 }
+
 label {
   font-size: 1.5em;
   font-family: "Roboto", sans-serif;
   margin-bottom: 5px;
   margin-top: 35px;
   color: #8d62e9;
+  margin-left: 40px;
 }
 
 .form-control {
   border-color: #8d62e9;
   margin-bottom: 20px;
+  margin-left: 40px;
+  width: 500px;
 }
 
 .h2-contato {
@@ -894,6 +920,8 @@ label {
 
 
 .btn-enviar{
+  margin-top: 50px;
+  margin-left: 250px;
   background-color: #000000;
 }
 
@@ -902,3 +930,78 @@ label {
 
  
 }
+
+
+
+
+@media only screen and (max-width: 400px) {
+
+  /* tipografia */
+
+  p{
+    font-size: 21px;
+
+  }
+
+.header{
+  max-width: 400px;
+}
+
+.section-video{
+ height: 400px;
+
+}
+
+
+  #titulo{
+    font-size: 33px;
+  }
+ #textinho{
+  font-size: 22px;
+ }
+
+
+ #textinho1{
+  font-size: 19px;
+ }
+  /* SOBRE */
+  .articleUm{
+    padding-right: 23px;
+  }
+  .h2-sobre {
+    font-size: 32px;
+   
+  }
+
+  
+  .sobre-text {
+    font-size: 18px;
+  }
+
+  .btn-2{
+    margin-left: 0;
+  }
+ 
+  .eu {
+   max-width: 300px;
+   margin-left: -20px;
+  }
+
+  /* Estilos para .link */
+ 
+  /* Estilos para .section-servico */
+  .section-servico {
+    font-size: 11px;
+    margin-right: 10px;
+  }
+
+  .h2-topicos{
+    font-size: 33px;
+  }
+
+  #skills{
+    margin-top: 600px;
+  }
+  /* Adicione estilos para os outros seletores conforme necessário */
+}
+  
