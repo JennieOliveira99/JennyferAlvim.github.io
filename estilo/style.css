@@ -537,19 +537,7 @@ nav {
 
 
 /*------------------------------------------------------------------------------------------------- TECNOLOGIAS*/
-#Tecnologia{
-/*margin-top: 200px;*/
-}
 
-/*
-.text-white {
-  
- /* width: 105%;
-}*/
-.img-tec {
-  margin-left: 25px;
-  margin-bottom: 20px;
-}
 .h2-tec {
   margin-left: 70px;
   margin-top: 70px;
@@ -596,174 +584,7 @@ nav {
   color: #000000; /* Altera a cor do texto para amarelo ao passar o mouse */
 }
 
-/*---------------------------------------------------------------------------------------------------------------FORMAÇÃO*/
-.article-formacao {
-   /* width: 105%;*/
-  padding-right: 260px;
 
-
-}
-
-
-.h2-formacao {
-  margin-left: 70px;
-  margin-top: 70px;
-  font-size: 70px;
-  margin-bottom: 15px;
-  font-family: "Roboto", sans-serif;
-  color: #c839c6;
-}
-/*Estiliza a descrição associada a cada evento na linha do tempo.*/
-.desc {
-  margin: 1em 0.75em 0 1;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5em;
-  color: #f5f3f8;
-}
-
-/*------------------------------- TIMELINE*/
-
-/* Define sua posição, largura, margens, preenchimento e remove a estilização padrão da lista.*/
-
-.timeline {
-  font-size: 2em;
-  line-height: 1.6em;
-  position: relative;
-  max-width: 660px; /* Alterado de width para max-width */
-  margin: 0 auto; /* Isso centraliza a linha do tempo */
-  margin-top: 20px;
-  padding: 1em 0;
-  list-style-type: none;
-  font-family: "Roboto", sans-serif;
-}
-
-.time {
-  font-size: 1em;
-}
-
-/*Adiciona uma linha vertical no centro da linha do tempo usando pseudoelemento :before.*/
-.timeline:before {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  content: " ";
-  display: block;
-  width: 6px;
-  height: 100%;
-  margin-left: -3px;
-  background: #c9df25; /* Cor sólida */
-  
-
-}
-
-/*Define o preenchimento e estilo para os itens da linha do tempo.*/
-/*Adiciona um pseudoelemento :after para limpar a formatação de elementos filhos flutuantes.*/
-.timeline li {
-  padding: 1em 0;
-}
-
-.timeline li:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-.direction-l {
-  position: relative;
-  width: 300px;
-  float: left;
-  text-align: right;
-}
-
-.direction-r {
-  position: relative;
-  width: 300px;
-  float: right;
-}
-
-/*Estiliza as bandeiras exibidas nos itens da linha do tempo.*/
-.flag-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.flag {
-  position: relative;
-  display: inline;
-  /* background: rgb(133, 112, 112);*/
-  /*  padding: 6px 6px;*/
-  border-radius: 30px;
-  color: #c839c6;
-  font-size: 30px;
-  font-weight: 600;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-}
-
-/*circulos*/
-.direction-l .flag:before,
-.direction-r .flag:before {
-  position: absolute;
-  top: 50%;
-  right: -40px;
-  content: " ";
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  background: #c839c6;
-  border-radius: 10px;
-  border: 4px solid #c839c6;
-  z-index: 10;
-}
-
-.direction-r .flag:before {
-  left: -60px;
-}
-
-/*Estiliza a área que contém a data e hora associadas a cada evento na linha do tempo.*/
-.time-wrapper {
-  display: inline;
-  line-height: 1em;
-  font-size: 0.444em;
-  color: #2f2843;
-  vertical-align: middle;
-}
-
-.direction-l .time-wrapper {
-  float: left;
-}
-
-.direction-r .time-wrapper {
-  float: right;
-}
-/*Anos de cursos*/
-
-.time {
-  margin-top: 5px;
-  margin-bottom: 15px;
-  display: inline-block;
-  padding: 4px 6px;
-  background-color: #c9df25;
-  border-radius: 10%;
-}
-
-.link-grade {
-  color: #dde3eb;
-  font-size: 1em;
-  margin-top: 20px;
-  background-color: #c839c6;
-  padding: 5px;
-  border-radius: 10px;
-}
-.direction-r .desc {
-  margin: 1em 0 0 0.75em;
-}
-
-/* Ajusta o layout para telas menores, como dispositivos móveis.*/
 
 
 /*---------------------------------------------------------------------------------------------------------------------Projetos*/
@@ -1025,7 +846,8 @@ height: 400px;
 }
 
 .social-icon:hover img {
- display: none;
+ display: none
+ ;
 }
 
 
@@ -1038,10 +860,77 @@ height: 400px;
   .h2-topicos{
     font-size: 33px;
   }
-
+/**/
   #skills{
     margin-top: 600px;
+    padding: 0;
   }
-  /* Adicione estilos para os outros seletores conforme necessário */
+
+  
+
+  .h2-formacao{
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+
+.progressBar,
+.topic-skill{
+  margin-left: 51px;
 }
+  /**/
+  
+  .h2-project-left,
+  .h2-project{
+    font-size: 33px;
+    color: white;
+    margin-bottom: 13px;
+    margin-left: 45px;
+  }
+  .text-left{
+    margin-right: 5px;
+    margin-left: 51px;
+  }
+  .text{
+    margin-left: 51px;
+    margin-right: 25px;
+  }
+  .btn-code{
+    margin-left: 51px;
+  }
+
+  .img-project{
+   margin-left: 0;
+  }
+
+  .img-projeto{
+    width: 350px;
+    margin-left: 0;
+  }
+
+  /**/
+
+  .h2-contato{
+    margin-left: 45px;
+  }
+  .texto-contato{
+    font-size: 20px;
+    margin-left: 45px;
+  }
+
+  .form-group{
+    margin-left: 45px;
+  }
+  .form-control{
+    max-width: 200px;
+   
+  }
+  .btn-enviar{
+    margin-left: 105px;
+    margin-top: 30px;
+  }
+  .footer{
+    font-size: 5px;
+  }
+}
+
   
