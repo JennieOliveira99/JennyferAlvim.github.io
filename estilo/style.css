@@ -34,7 +34,8 @@ overflow-x: hidden;/*tirar barra de rolagem*/
 /************************BOTOES*/
 
 
-.btn, .btn-code{
+.btn {
+  text-decoration: none;
   position: relative;
   display: inline-block;
   margin: 15px;
@@ -54,7 +55,26 @@ overflow-x: hidden;/*tirar barra de rolagem*/
   -moz-transition: ease-out 0.5s;
 }
 
+.btn-code {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin-left: 55px;
+  padding: 12px 27px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #130e13;
+  background: #ffffff;
+  border: 2px solid #c839c6;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  
+}
+
 .btn-sm{
+  text-decoration: none;
   position: relative;
   display: inline-block;
   margin-left: 15px;
@@ -212,6 +232,41 @@ overflow-x: hidden;/*tirar barra de rolagem*/
 }
 
 
+/*animação code e view*/
+.btn-code.btn-border-1::after,
+.btn-code.btn-border-1::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.btn-code.btn-border-1::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.btn-code.btn-border-1::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.btn-code.btn-border-1:hover {
+    color: #222222;
+}
+
+.btn-code.btn-border-1:hover::after,
+.btn-code.btn-border-1:hover::before {
+    width: 30px;
+    height: 30px;
+    border-color: #222222;
+}
+
 
 /*************************FIM BOTOES*/
 
@@ -306,6 +361,17 @@ h1 {
   font-size: 35px;
   color: #ffffff;
   margin-left: 23px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.text-tec {
+  font-size: 1.4rem;
+  color: #fdfdfd;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .h2-contato {
@@ -639,14 +705,6 @@ nav {
 
 
 
-.text-tec {
-  font-size: 1.4rem;
-  color: #fdfdfd;
-  font-weight: lighter;
-  opacity: 0.8;
-  margin-left: 10px;
-  font-family: "Roboto", sans-serif;
-}
 
 .minimenu {
   /*background-color: #252423b2;*/
@@ -709,7 +767,6 @@ nav {
 .text-left {
   margin-top: 80px;
   margin-left: 40px;
- 
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #494440;
@@ -742,7 +799,7 @@ nav {
 
 
 .tect{
-  background: rgba(255, 255, 255, 0.5); /* Cor de fundo com opacidade */
+  background: rgba(255, 255, 255, 0.445); /* Cor de fundo com opacidade */
   backdrop-filter: blur(10px); /* Aplicando o filtro de desfoque */
   padding-right: 40px;
   padding-top:100px;
@@ -754,7 +811,8 @@ nav {
 
 
 .texto-contato{
-  font-size: 1.5em;
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 label {
@@ -797,7 +855,8 @@ label {
 *{
   padding: 0;
   margin: 0;
-overflow-x: hidden;/*problema do width*/
+  overflow-x: hidden;/*problema do width*/
+  overflow: hidden;
 }
   p{
     font-size: 21px;
@@ -830,12 +889,13 @@ background-color: #00000000;
 /*=========================VIDEO*/
 .section-video{
  max-width: 400px;
-height: 400px;
+  height: 300px;
 }
 
 
   #titulo{
     font-size: 33px;
+    margin-top: 100px;
   }
  #textinho{
   font-size: 22px;
@@ -919,7 +979,7 @@ height: 400px;
   .servico-item3{
     padding-left: 60px;
   }
-/**/
+/*skills*/
   #skills{
     margin-top: 600px;
     padding: 0;
@@ -936,7 +996,11 @@ height: 400px;
 .topic-skill{
   margin-left: 51px;
 }
-  /**/
+
+/*FORMAÇÃO*/
+
+
+  /*PROJETOS*/
   
   .h2-project-left,
   .h2-project{
@@ -946,7 +1010,7 @@ height: 400px;
     margin-left: 45px;
   }
   .text-left{
-    margin-right: 5px;
+    margin-right: 8px;
     margin-left: 51px;
     color: #fff;
   }
@@ -967,7 +1031,7 @@ height: 400px;
     margin-left: 0;
   }
 
-  /**/
+  /*CONTATO*/
 
   .h2-contato{
     margin-left: 45px;
@@ -984,7 +1048,7 @@ height: 400px;
     max-width: 200px;
    
   }
-  .btn-contato{
+  .btn-code{
     margin-left: 105px;
     margin-top: 30px;
   }
