@@ -93,7 +93,7 @@
       <div class="col-12 col-lg-5  order-lg-2 ">
         <div class="content-wrapper text-top">
           <h2 class="h2-sobre "> Eu sou a Jennyfer Alvim</h2>
-          <p class="sobre-text ">Nascida em São Paulo em 13/03/1999, desde criança minha curiosidade não tem limites. Encontrei na tecnologia minha vocação, onde vejo um mundo de criação infinito. Autodidata em arte desde os 7 anos, traduzo minha paixão pela arte atravé dos códigos.<br></p>
+          <p class="sobre-text ">Nascida em São Paulo em 13/03/1999, desde criança minha curiosidade não tem limites. Encontrei na tecnologia minha vocação, onde vejo um mundo de criação infinito. Autodidata em arte desde os 7 anos, traduzo minha paixão pela arte através dos códigos.<br></p>
             <p class="sobre-text2">O próximo objetivo: Ingressar na área DEV!</p>
             <span class="btn btn-border-1" onclick="downloadPDF()">Baixar CV <i class="fa fa-download"></i></span>
 
@@ -135,9 +135,9 @@
   </section>
 
   <section id="Servico" class="section-servico">
-    <div class="container-fluid">
+    <div class="container">
       
-      <h2 class="text-center h2-topicos justify-content-center align-items-center">Services</h2>
+      <h2 class="text-center h2-topicos ">Services</h2>
     
       <div class="row align-items-center justify-content-center">
 
@@ -148,17 +148,7 @@
             <h3 class="h3-servico">Desenvolvimento</h3>
             <p class="p-servico">Desenvolvimento de Sites;<br>
                                   Otimização de Performance; <br>
-                                  Manutenção e Suporte para Websites e Aplicações.<br><br></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-12 col-sm-12  me-3 mb-3">
-          <div class="servico-item2">
-            <!-- Conteúdo da segunda seção -->
-            <img class="img-servico" src="./img/bd.png" width="90px" alt="Descrição da Imagem">
-            <h3 class="h3-servico">Banco de Dados</h3>
-            <p class="p-servico">Desenvolvimento de Banco de Dados;<br>
-                                Modelagem de Dados; <br>
-                               Administração de Banco de Dados SQL Server e MySQL.<br><br><br></p>
+                                  Manutenção e Suporte para Websites e Aplicações.<br></p>
           </div>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12  me-3 mb-3">
@@ -172,6 +162,17 @@
                                   Documentação de Software.</p>
           </div>
         </div>
+        <div class="col-lg-3 col-md-12 col-sm-12  me-3 mb-3">
+          <div class="servico-item2">
+            <!-- Conteúdo da segunda seção -->
+            <img class="img-servico" src="./img/bd.png" width="90px" alt="Descrição da Imagem">
+            <h3 class="h3-servico">Banco de Dados</h3>
+            <p class="p-servico">Desenvolvimento de Banco de Dados;<br>
+                                Modelagem de Dados; <br>
+                               Administração de Banco de Dados SQL Server e MySQL.<br><br></p>
+          </div>
+        </div>
+       
   
       </div>
     </div>
@@ -179,85 +180,118 @@
   </section>
   
 
-  <section id="Tecnologia" class="text-white ">
-   
-    <div class="container-fluid ">
-      <div class="row">
-        <h2 class="text-center h2-topicos text-white">Formação</h2>
-        <!-- Container para as imagens -->
-        <div class="container-fluid mt-5">
-          <div class="row">
-  
-            <div class="d-flex justify-content-center align-items-center">
-            <div class="minimenu">
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs justify-content-center" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" data-bs-toggle="tab" href="#menu0">Graduação</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#menu1">Técnico</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#menu2">Certificações</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#menu3">Database</a>
-                </li>-->
-              </ul>
 
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div id="menu0" class="container-fluid tab-pane active">
-            
-                 
-                  <h3 class="h3-tec">Sistemas para Internet</h3>
-               
-                  <p class="text-tec">
-                    Faculdade de tecnologia iniciada em 2022, onde além de aprender, pude fazer amizades, apresentar projetos em eventos acadêmicos e aprimorar minhas habilidades técnicas de programação.<br>
-                  </p>
-                  <button class="btn-sm btn-border-2" data-indice="1">Grade Curricular <i class="fas fa-search"></i></button>
+  <!--tester-->
+ 
+<section id="Tecnologia" class="text-dark">
+  <div class="container">
+    <h2 class="text-center h2-topicos">Formação</h2>
 
-                 
+    <div class="row">
+      <div class="col-md-12">
+        <div class="timeline">
+          <div class="timeline-item animated-slide-in-left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content"> 
+              <h3 class="timeline-title">Graduação</h3>
+              <p>Sistemas para Internet - Faculdade de Tecnologia do Estado de SP (2022 - 2025)</p>
+              <button class="btn btn-border-1" data-toggle="modal" data-target="#modalGraduacao">Grade Curricular</button>
+            </div>
+          </div>
 
-                  </div>
-                <div id="menu1" class="container-fluid tab-pane fade">
-              
-                 
-                   <h3 class="h3-tec">Desenvolvimento de Sistemas </h3>
-                  <p class="text-tec">
-                    Curso técnico onde tive meu primeiro contato com programação através de CSharp e JavaScript. Fui eleita representante de turma em todos os 3 semestres do curso, o que ajudou a desenvolver minhas habilidades de liderança e empatia.
-                  </p>
+          <div class="timeline-item  animated-slide-in-left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content"> 
+              <h3 class="timeline-title">Técnico</h3>
+              <p>Desenvolvimento de Sistemas - Escola Técnica (Centro Paula Souza São Roque) (2019 - 2021)</p>
+              <button class="btn btn-border-1" data-toggle="modal" data-target="#modalTecnico">Grade Curricular</button>
+            </div>
+          </div>
 
-                  <button class="btn-sm btn-border-2" data-indice="1">Grade Curricular <i class="fas fa-search"></i></button>
-
-              
-                 
-                </div>
-
-                <div id="menu2" class="container-fluid tab-pane fade">
-                 
-                  
-                  <h3 class="h3-tec"> Cursos Complementares</h3>
-                  <p class="text-tec">  Corel Draw - Instituto Share - Conclusão 2020.</p>
-                  <p class="text-tec"> Fundamentos Cyber segurança - Linux Foundation - Conclusão 2024</p>
-                  <p class="text-tec">  IA Generativa - LinkedIn Learning - Conclusão 2024.</p>
-                  <button class="btn-sm btn-border-2" data-indice="1">Grade Curricular <i class="fas fa-search"></i></button>
-
-                </div>
-
-                
-              </div>
+          <div class="timeline-item animated-slide-in-left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content"> 
+              <h3 class="timeline-title">Certificações</h3>
+              <p>Corel Draw - Instituto Share (2020)</p>
+              <p>Fundamentos Cyber segurança - Linux Foundation (2024)</p>
+              <p>IA Generativa - LinkedIn Learning (2024)</p>
+              <button class="btn btn-border-1" data-toggle="modal" data-target="#modalCertificacoes">Grade Curricular</button>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  
+<!-- Modais -->
+<div class="modal fade" id="modalGraduacao" tabindex="-1" role="dialog" aria-labelledby="modalGraduacaoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGraduacaoLabel">Graduação - Sistemas para Internet</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>Desenvolvimento:<br></h5>
+        <p class="p-modal">Design de Navegação e Interação, Desenvolvimento para Dispositivos Mobile com Flutter, Desenvolvimento para Servidores, Prototipagem e Testes de Usabilidade, Arquitetura Orientada a Serviços, Padrões de Design, Desenvolvimento web (HTML, CSS, JavaScript), Tópicos especiais (micro controladores).</p>
+        <h5>Fundamentos da Programação:<br></h5>
+        <p class="p-modal">Algoritmos e Lógica de Programação, Criação de Conteúdo Web, Redes e Internet, Estruturas de Dados com PHP, SQL Server e Management Studio, Engenharia de Software para a Web, Noções Básicas de Internet, Design Digital, Negócios e Marketing, Eletrônica, Criação de Negócios na Internet, Servidores e seus Sistemas Operacionais, Práticas de Gerenciamento de Projetos, Padrões de Design de Sites na Internet, Acessibilidade, Leitura e Produção de Texto, Inglês.<br></p>
+        <h5>Matemática:<br></h5>
+        <p class="p-modal">Fundamentos da Matemática Elementar, Matemática Discreta, Estatística.<br></p>
+        <h5>Segurança:<br></h5>
+        <p class="p-modal">Segurança de Sistemas de Internet, Legislação Aplicada à Internet.</p>
+       
+        <!--<img src="imagem_graduacao.jpg" alt="Imagem da graduação" class="img-fluid">--> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalTecnico" tabindex="-1" role="dialog" aria-labelledby="modalTecnicoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTecnicoLabel">Técnico - Desenvolvimento de Sistemas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>Desenvolvimento:<br></h5>
+        <p class="p-modal">Programação de Aplicativos Móveis I, II, III com Csharp, Programação Web (HTML, CSS e JavaScript), Banco de Dados I, II, III (MySQL), Design Digital (Gimp, Fireworks), Sistemas Embarcados, Qualidade de Software e Testes.</p>
+        <h5>Fundamentos de Programação:<br></h5>
+        <p class="p-modal">Desenvolvimento de Sistemas, Análise e Projeto de Sistemas, Internet e Protocolos, Fundamentos de Computação, Inglês Instrumental, Língua Portuguesa, Trabalho e Tecnologia, Técnicas de Programação, Programação e Algoritmos.<br></p>
+        <!--<img src="imagem_tecnico.jpg" alt="Imagem do técnico" class="img-fluid">-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCertificacoes" tabindex="-1" role="dialog" aria-labelledby="modalCertificacoesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCertificacoesLabel">Certificações</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>CorelDraw pelo Instituto Share (concluído - 2020):<br></h5>
+        <p class="p-modal">Teoria das cores, Paletas, Psicologia das Cores, Padrões de Edições, Ferramenta CorelDraw.</p>
+        <h5>Fundamentos de Cibersegurança pela LINUX FOUNDATION (concluído - 2024):<br></h5>
+        <p class="p-modal">Conscientização em Cibersegurança, Malware, Violações de Segurança Cibernética, Proteção e Prevenção, Segurança de Dispositivos Móveis, Segurança de Redes Sociais, Software de Prevenção.<br></p>
+        <h5>IA Generativa pelo LinkedIn Learning:<br></h5>
+        <p class="p-modal">Fundamentos de Tecnologia de Mecanismos de Busca, Fundamentos de IA Generativa.</p>
+        <!-- <img src="imagem_certificacoes.jpg" alt="Imagem das certificações" class="img-fluid">-->
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <section class="skills">
   <div class="container">
@@ -502,6 +536,9 @@
 
 
   <script src="script/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

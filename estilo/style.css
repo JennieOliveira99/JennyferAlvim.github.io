@@ -330,7 +330,7 @@ h1 {
 
 
 .p-servico {
-  font-size: 1.6em;
+  font-size: 1.3em;
   color: #fdfdfd;
   font-weight: lighter;
   opacity: 0.8;
@@ -342,9 +342,8 @@ h1 {
 .h3-servico {
   font-family: "Gruppo", sans-serif;
   font-weight: bold;
-  font-size: 1.9em;
   color: #ffffff;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .h2-tec {
@@ -627,109 +626,113 @@ nav {
 
 
 /*-------------------------------------------------------------------------------------------------SERVIÇOS*/
-
-
 .section-servico {
   padding-bottom: 50px; /* Reduzindo o padding inferior para reduzir o espaço extra */
   margin-bottom: 100px; /* Adicionando um espaço extra após a seção de serviços */
 }
 
-.servico-item1,
-.servico-item2,
-.servico-item3,
-.servico-item4 {
-  position: relative;
-  min-width: 300px;
-  height: auto;
-  overflow: hidden;
-  border-radius: 15px;
-  margin: 0 auto 20px; /* Adicionando margin-bottom apenas para os itens de serviço */
-  padding: 40px 20px; /* Removendo o padding fixo */
-  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-  transition: .5s;
+.servico-container {
+  display: flex;
+  justify-content: space-between; /* Distribui os elementos igualmente ao longo do eixo principal */
 }
 
-
+.servico-item {
+  flex: 1; /* Faz os cards ocuparem a mesma largura */
+  position: relative;
+  min-width: 350px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px; /* Adicionando margin-bottom para separar os cards */
+  padding: 40px; /* Removendo o padding fixo */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s, border-radius 0.5s; /* Adicionando border-radius à transição */
+}
 
 .img-servico {
- align-items: center;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 5px;
 }
 
 
-
-
-.servico-item1:hover,
-.servico-item2:hover,
-.servico-item3:hover,
-.servico-item4:hover
-{
-  transform:scale(1.1);
-}
 .servico-item1 {
- /* background: linear-gradient(-45deg, #ffec61, #f321d7);*/
- background: linear-gradient(-45deg, #24ff72, #9a4eff);
-}
-.servico-item2  {
-  background: linear-gradient(-45deg, #f403d1, #64b5f6);
-}
-.servico-item3  {
   background: linear-gradient(-45deg, #24ff72, #9a4eff);
+  border-radius: 10px;
+  padding: 5px 8px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
+  justify-content: space-between;
 }
 
-.servico-item1::before,
-.servico-item2::before,
-.servico-item3::before,
-.servico-item4::before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: rgba(255, 255, 255, .1);
-  z-index: 1;
-  transform: skewY(-5deg) scale(1.5);
+.servico-item2 {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+  border-radius: 10px;
+  padding: 5px;
+  justify-content: space-between;
 }
 
-
-
-
-
+.servico-item3 {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+  border-radius: 10px;
+  padding: 5px;
+  justify-content: space-between;
+}
 
 
 
 
 /*------------------------------------------------------------------------------------------------- TECNOLOGIAS*/
 
-
-
-
-.minimenu {
-  /*background-color: #252423b2;*/
-  border-radius: 30px 10px 20px 5px;
-  padding: 30px;
-  height: 500px;
-  width: 1300px;
-  padding-bottom: 20px;
-  margin-top: 40px;
-  /*overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
-  margin-bottom: 100px;
+.timeline {
+  position: relative;
+  margin-top: 50px;
 }
 
-.nav-link {
-  color: #c9df25;
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
+.timeline-item {
+  position: relative;
+  padding: 20px;
+  border-left: 3px solid #8d62e9;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.minimenu .nav-link:hover {
-  color: #000000; /* Altera a cor do texto para amarelo ao passar o mouse */
+
+.timeline-marker {
+  position: absolute;
+  top: 15px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #8d62e9;
+  z-index: 1;
+}
+
+.timeline-content {
+  padding-left: 20px;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  color: #8d62e9;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  margin-bottom: 5px;
+  color: #555;
 }
 
 
 
 
+/******************************MODAL*/
+.p-modal{
+  font-size: 14px;
+}
+.modal-content {
+  background-color: #ceaeae; /* Cor de fundo do modal */
+  color: #333; /* Cor do texto do modal */
+}
 /*---------------------------------------------------------------------------------------------------------------------Projetos*/
 
 .articleDois {
@@ -844,6 +847,27 @@ label {
 
 .img-cont{
   opacity: 0.9; 
+}
+
+
+/*====================================================ANIMAÇÕES*/
+
+/*esquerda para direita*/
+
+.animated-slide-in-left {
+  animation: slide-in-left 0.3s ease forwards; /* Definindo a animação */
+  opacity: 0; /* Iniciando a opacidade em 0 para que o elemento seja invisível antes da animação */
+}
+
+@keyframes slide-in-left {
+  from {
+      transform: translateX(-100%); /* Da esquerda (fora do viewport) */
+      opacity: 0; /* Iniciando com opacidade 0 */
+  }
+  to {
+      transform: translateX(0); /* Para a posição inicial */
+      opacity: 1; /* Finalizando com opacidade 1 */
+  }
 }
 
 
