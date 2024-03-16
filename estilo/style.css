@@ -16,18 +16,8 @@ body {
   margin: 0;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   width: 100%;
-  
-
-background: linear-gradient(to bottom, 
-  hsla(0, 2%, 38%, 0.249), 
-  #f3f3f38f,
-  rgba(0, 0, 0, 0.975),
-  #939190c6,
-  rgba(234, 228, 228, 0.693),
-  rgb(157, 161, 162)
-);
-overflow-x: hidden;/*tirar barra de rolagem*/
-
+  overflow-x: hidden;/*tirar barra de rolagem*/
+  background-color: #f7f3d2fc;
 }
 /******************************FIM*/
 
@@ -46,9 +36,9 @@ overflow-x: hidden;/*tirar barra de rolagem*/
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: bold;
-  color: #130e13;
-  background: #ffffff;
-  border: 2px solid #c839c6;
+  color: #1a1a1a;
+  background: #f4f0e6;
+  border: 2px solid #ff3800;
   cursor: pointer;
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
@@ -65,9 +55,9 @@ overflow-x: hidden;/*tirar barra de rolagem*/
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #130e13;
-  background: #ffffff;
-  border: 2px solid #c839c6;
+  color: #1a1a1a;
+  background: #f4f0e6;
+  border: 2px solid #ff3800;
   cursor: pointer;
   transition: all 0.5s ease-out;
   
@@ -78,11 +68,11 @@ overflow-x: hidden;/*tirar barra de rolagem*/
   position: relative;
   display: inline-block;
   margin-left: 15px;
-  color: #ffffff;
+  color: #f4f0e6;
   font-size: 16px;
-  border: 2px solid #ffffffc9;
+  border: 2px solid #f4f0e6c9;
   padding: 5px;
-  background-color: #ffffff38;
+  background-color: #f4f0e638;
   cursor: pointer;
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
@@ -100,9 +90,9 @@ overflow-x: hidden;/*tirar barra de rolagem*/
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: bold;
-  color: #130e13;
-  background: #ffffff;
-  border: 2px solid #c839c6;
+  color: #1a1a1a;
+  background: #f4f0e6;
+  border: 2px solid #ff3800;
   cursor: pointer;
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
@@ -171,7 +161,7 @@ overflow-x: hidden;/*tirar barra de rolagem*/
 }
 
 .btn-sm.btn-border-2:hover {
-    color: #ffffff;
+    color: #f4f0e6;
 }
 
 .btn-sm.btn-border-2:hover::after,
@@ -197,22 +187,22 @@ overflow-x: hidden;/*tirar barra de rolagem*/
 .btn-contato.btn-border-3::after {
     bottom: -3px;
     right: -3px;
-    border-left: 3px solid #222222;
-    border-bottom: 3px solid #222222;
+    border-left: 3px solid #ff3800;
+    border-bottom: 3px solid #ff3800;
     transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
 }
 
 .btn-contato.btn-border-3::before {
     top: -3px;
     left: -3px;
-    border-top: 3px solid #222222;
-    border-right: 3px solid #222222;
+    border-top: 3px solid #ff3800;
+    border-right: 3px solid #ff3800;
     transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
 }
 
 .btn-contato.btn-border-3:hover {
     animation: pulse 1s ease-out .4s;
-    color: #222222;
+    color: #ff3800;
 }
 
 .btn-contato.btn-border-3:hover::after,
@@ -268,6 +258,8 @@ overflow-x: hidden;/*tirar barra de rolagem*/
 }
 
 
+
+
 /*************************FIM BOTOES*/
 
 /************************************TEXTOS E TITULOS*/
@@ -279,7 +271,7 @@ p{
 
 
 .h2-sobre {
-  color: #8d62e9;
+  color: #ff3800;
   font-size:2.5em;
   margin-left: 25px;
   margin-bottom: 45px;
@@ -297,7 +289,7 @@ p{
    font-family: "Roboto", sans-serif;
 }
 .sobre-text2 {
-  color: #c839c6;
+  color: #ff3800;
   font-size: 20px;
   font-weight: lighter;
   opacity: 0.8;
@@ -309,13 +301,13 @@ p{
 h2 {
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: bold;
-  color: #8d62e9;
+  color: #ff3800;
 }
 
 h1 {
   margin-top: 220px;
   margin-bottom: 10px;
-  color: #8d62e9;
+  color: #ff3800;
   font-size: 3em;
 }
 
@@ -324,7 +316,7 @@ h1 {
   font-size: 70px;
   margin-bottom: 45px;
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  color: #8d62e9;
+  color: #ff3800;
 }
 
 
@@ -335,14 +327,15 @@ h1 {
   font-weight: lighter;
   opacity: 0.8;
   margin-left: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: lighter;
 }
 
 
 .h3-servico {
   font-family: "Gruppo", sans-serif;
   font-weight: bold;
-  color: #ffffff;
+  color: #f4f0e6;
   margin-left: 10px;
 }
 
@@ -352,13 +345,13 @@ h1 {
   font-size: 70px;
   margin-bottom: 15px;
   font-family: "Oswald", sans-serif;
-  color: #8d62e9;
+  color: #ff3800;
 }
 
 .h3-tec {
   font-family: "Oswald", sans-serif;
   font-size: 35px;
-  color: #ffffff;
+  color: #f4f0e6;
   margin-left: 23px;
   margin-top: 15px;
   margin-bottom: 30px;
@@ -370,12 +363,13 @@ h1 {
   font-weight: lighter;
   opacity: 0.8;
   margin-left: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: lighter;
 }
 
 .h2-contato {
   font-size: 3em;
-  color: #8d62e9;
+  color: #ff3800;
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -386,8 +380,10 @@ h1 {
 
 /* Skills Section
 ********************************************************************* */
-#skills {
+.skills {
 	padding-top: 10px;
+  padding-bottom: 50px;
+  
 }
 
 .progressBar {
@@ -400,47 +396,6 @@ h1 {
 	margin-bottom: 5px; /* Ajuste conforme necessário */
 }
 
-.progressBarValue {
-	height: 8px;
-	float: left;
-	background: #e55d87; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
-}
-.value-00 {
-	width: 0;
-}
-.value-10 {
-	width: 10%;
-}
-.value-20 {
-	width: 20%;
-}
-.value-30 {
-	width: 30%;
-}
-.value-40 {
-	width: 40%;
-}
-.value-50 {
-	width: 50%;
-}
-.value-60 {
-	width: 60%;
-}
-.value-70 {
-	width: 70%;
-}
-.value-80 {
-	width: 80%;
-}
-.value-90 {
-	width: 90%;
-}
-.value-100 {
-	width: 100%;
-}
 
 
 
@@ -547,30 +502,32 @@ h1,
   top: 0;
   z-index: 1000;
   padding-right: 0; /* Remova o padding direito */
+  justify-content: center;
 }
 
 
 
 #header {
-  background-color: #8d62e9;
-  height: 5em;
+  background-color: #f7f3d2;
+  height: 4em;
   margin-bottom: 3em;
   font-size: large;
   margin-right: 0;
   width: 100%;
+  justify-content: center;
 }
 
 nav ul li a:hover {
-  color: #ffffff;
+  color: #ff3800;
 }
 
 
 .navbar-light .navbar-nav .nav-link {
-  color: #ffffff;
-font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  background-color: #8d62e9;
-  text-transform: uppercase;
+  color: #ff3800;
+  font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: lighter;
   padding: 12px;
+  justify-content: center;
 
 }
 
@@ -580,8 +537,8 @@ font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSyste
 
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: #ffffff;
+.navbar-light .navbar-nav  {
+  color: #1b1b1b;
 }
 
 nav {
@@ -592,7 +549,7 @@ nav {
 
 .navbar-nav .nav-link {
    text-transform: uppercase;
-  color: #ffffff;
+  color: #f4f0e6;
   font-family: "gruppo";
   font-weight: bolder;
   font-size: 20px;
@@ -608,7 +565,11 @@ nav {
 /*-------------------------------fim*/
 
 /*------------------------------------------SOBRE MIM*/
-
+.articleUm{
+  background-color: #f7f3d2f1; 
+  overflow: hidden; /* Para cortar qualquer conteúdo que saia da área do artigo */
+  padding-top: 60px;
+}
 .text-top {
   padding-right: 50px;
   padding-left: 50px;
@@ -625,10 +586,13 @@ nav {
 }
 
 
+
 /*-------------------------------------------------------------------------------------------------SERVIÇOS*/
 .section-servico {
+  background-color: #f7f3d2de; 
+  overflow: hidden;
   padding-bottom: 50px; /* Reduzindo o padding inferior para reduzir o espaço extra */
-  margin-bottom: 100px; /* Adicionando um espaço extra após a seção de serviços */
+  margin-bottom: 0; /* Adicionando um espaço extra após a seção de serviços */
 }
 
 .servico-container {
@@ -656,21 +620,21 @@ nav {
 
 
 .servico-item1 {
-  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+  background: linear-gradient(-45deg,  #000000, #17141f);
   border-radius: 10px;
   padding: 5px 8px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
   justify-content: space-between;
 }
 
 .servico-item2 {
-  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+  background: linear-gradient(-45deg, #000000, #17141f);
   border-radius: 10px;
   padding: 5px;
   justify-content: space-between;
 }
 
 .servico-item3 {
-  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+  background: linear-gradient(-45deg, #000000, #17141f);
   border-radius: 10px;
   padding: 5px;
   justify-content: space-between;
@@ -679,23 +643,41 @@ nav {
 
 
 
-/*------------------------------------------------------------------------------------------------- TECNOLOGIAS*/
+/*--------------------------------------------------------------------------------------- FORMAÇÃO*/
+
+#Formacao{
+  background-color: #f7f3d2de; 
+  padding-top: 90px;
+  margin-top: 0;
+ padding-bottom: 10px;
+ 
+}
+#modal-1,
+#modal-2,
+#modal-3{
+  margin-top: 15px;
+  height: 35px;
+  padding-top: 6px;
+  font-size: 13px;
+}
+
 
 .timeline {
   position: relative;
   margin-top: 50px;
+  background-color: #f7f3d2de; 
 }
 
 .timeline-item {
   position: relative;
   padding: 20px;
-  border-left: 3px solid #8d62e9;
+  border-left: 3px solid #ff3800;
   margin-bottom: 30px;
-  background-color: #f9f9f9;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #373434;
 }
 
+/*bolinha*/
 .timeline-marker {
   position: absolute;
   top: 15px;
@@ -703,23 +685,28 @@ nav {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #8d62e9;
+  background-color: #ff3800;
   z-index: 1;
+  
 }
 
 .timeline-content {
   padding-left: 20px;
+
+  padding-bottom: 15px;
+  margin-top: 10px;
 }
 
 .timeline-title {
   font-size: 1.2rem;
-  color: #8d62e9;
+  color: #ff3800;
   margin-bottom: 10px;
+
 }
 
 .timeline-content p {
   margin-bottom: 5px;
-  color: #555;
+
 }
 
 
@@ -730,21 +717,20 @@ nav {
   font-size: 14px;
 }
 .modal-content {
-  background-color: #ceaeae; /* Cor de fundo do modal */
+  background-color: #f7f3d2; /* Cor de fundo do modal */
   color: #333; /* Cor do texto do modal */
 }
 /*---------------------------------------------------------------------------------------------------------------------Projetos*/
 
 .articleDois {
-  
-
+  background-color: #f7f3d2d3;
   width: 105%;
 }
 .h2-project {
   font-family: "Gruppo", sans-serif;
   margin-top: 30px;
   font-size: 70px;
-  color: #8d62e9;
+  color: #ff3800;
 }
 
 .h2-project-left {
@@ -752,7 +738,7 @@ nav {
   margin-top: 30px;
   font-size: 60px;
   margin-left: 40px;
-  color: #c839c6;
+  color: #ff3800;
 }
 
 .img-left {
@@ -791,18 +777,29 @@ nav {
 }
 
 
+/*--------------------------------------------------------------------skills*/
 
+.skills{
+  background-color: #373434;
+}
+
+.fa-star{
+  color: #ff3800;
+}
 /*-----------------------------------------------------------CONTATO*/
 
 .articleContato {
   margin-bottom: 80px;
+  margin-top: 50px;
+  background-color: #f7f3d2de; 
  
 }
 
 
 
 .tect{
-  background: rgba(255, 255, 255, 0.445); /* Cor de fundo com opacidade */
+  background-color: #373434;
+  color: #f4f0e6;
   backdrop-filter: blur(10px); /* Aplicando o filtro de desfoque */
   padding-right: 40px;
   padding-top:100px;
@@ -823,12 +820,12 @@ label {
   font-family: "Roboto", sans-serif;
   margin-bottom: 5px;
   margin-top: 35px;
-  color: #8d62e9;
+  color: #ffffff;
   margin-left: 40px;
 }
 
 .form-control {
-  border-color: #8d62e9;
+  border-color: #ff3800;
   margin-bottom: 20px;
   margin-left: 40px;
   width: 500px;
@@ -842,7 +839,7 @@ label {
 .btn-enviar{
   margin-top: 50px;
   margin-left: 250px;
-  background-color: #000000;
+  background-color: #373434;
 }
 
 .img-cont{
@@ -880,7 +877,7 @@ label {
   padding: 0;
   margin: 0;
   overflow-x: hidden;/*problema do width*/
-  overflow: hidden;
+
 }
   p{
     font-size: 21px;
@@ -903,7 +900,7 @@ background-color: #00000000;
 .navbar-toggler{
   margin-left: 6px;
   margin-top: 30px;
-  background-color: #8d62e9;
+  background-color: #ff3800;
 }
 
 .navbar{
@@ -1010,15 +1007,13 @@ background-color: #00000000;
   }
 
   
-
-  .h2-formacao{
-    font-size: 33px;
-    margin-bottom: 20px;
-  }
-
-.progressBar,
-.topic-skill{
-  margin-left: 51px;
+.progressBar{
+  padding-left: 33px;
+  margin-left: 13px;
+}
+.img-skill{
+  max-width: 250px;
+  margin-left: 25px;
 }
 
 /*FORMAÇÃO*/
@@ -1029,14 +1024,14 @@ background-color: #00000000;
   .h2-project-left,
   .h2-project{
     font-size: 33px;
-    color: white;
+  
     margin-bottom: 13px;
     margin-left: 45px;
   }
   .text-left{
     margin-right: 8px;
     margin-left: 51px;
-    color: #fff;
+
   }
   .text{
     margin-left: 51px;
@@ -1057,24 +1052,27 @@ background-color: #00000000;
 
   /*CONTATO*/
 
-  .h2-contato{
-    margin-left: 45px;
-  }
-  .texto-contato{
-    font-size: 20px;
-    margin-left: 45px;
+  .tect{
+    background-color: #373434;
+    color: #f4f0e6;
+    border-radius: 140px 0 170px 0;
+    padding-left:45px;
+  
   }
 
-  .form-group{
-    margin-left: 45px;
+  .texto-contato{
+    font-size: 20px;
+  
   }
+
   .form-control{
-    max-width: 200px;
+    max-width: 180px;
    
   }
   .btn-code{
-    margin-left: 105px;
+   
     margin-top: 30px;
+
   }
   .footer{
     font-size: 5px;

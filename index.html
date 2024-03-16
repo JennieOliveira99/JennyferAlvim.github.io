@@ -37,15 +37,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Sobre"><span class="bi bi-house-heart"></span> Home</a>
+                            <a class="nav-link" href="#Sobre"> Sobre</a>
                         </li>
                  
                   <li class="nav-item">
                       <a class="nav-link" href="#Servico">Serviços</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#Tecnologia">Tecnologias</a>
-                  </li>
+                    <a class="nav-link" href="#Tecnologia">Tecnologias</a>
+                </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#Educacao">Formação</a>
                   </li>
@@ -75,9 +75,7 @@
         <h1 id="titulo" class="hidden justify-content-center align-items-center">Olá Mundo!</h1>
         <h4 id="textinho" class="hidden">Eu sou  Dev Front End</h4>
 
-        <h4 id="textinho1" class="hidden">Bem Vindo ao meu Portfolio!</h4>
-
-      
+        <h4 id="textinho1" class="hidden">Bem Vindo ao meu Portfolio!</h4>      
       </div>
     </div>
   </section>
@@ -92,7 +90,7 @@
     
       <div class="col-12 col-lg-5  order-lg-2 ">
         <div class="content-wrapper text-top">
-          <h2 class="h2-sobre "> Eu sou a Jennyfer Alvim</h2>
+          <h2 class="h2-sobre "> Me chamo Jennyfer</h2>
           <p class="sobre-text ">Nascida em São Paulo em 13/03/1999, desde criança minha curiosidade não tem limites. Encontrei na tecnologia minha vocação, onde vejo um mundo de criação infinito. Autodidata em arte desde os 7 anos, traduzo minha paixão pela arte através dos códigos.<br></p>
             <p class="sobre-text2">O próximo objetivo: Ingressar na área DEV!</p>
             <span class="btn btn-border-1" onclick="downloadPDF()">Baixar CV <i class="fa fa-download"></i></span>
@@ -165,11 +163,11 @@
         <div class="col-lg-3 col-md-12 col-sm-12  me-3 mb-3">
           <div class="servico-item2">
             <!-- Conteúdo da segunda seção -->
-            <img class="img-servico" src="./img/bd.png" width="90px" alt="Descrição da Imagem">
+            <img class="img-servico" src="./img/bd.png" width="80px" alt="Descrição da Imagem">
             <h3 class="h3-servico">Banco de Dados</h3>
             <p class="p-servico">Desenvolvimento de Banco de Dados;<br>
                                 Modelagem de Dados; <br>
-                               Administração de Banco de Dados SQL Server e MySQL.<br><br></p>
+                               Administração de Banco de Dados SQL Server e MySQL.<br></p>
           </div>
         </div>
        
@@ -183,39 +181,42 @@
 
   <!--tester-->
  
-<section id="Tecnologia" class="text-dark">
+<section id="Educacao" >
   <div class="container">
     <h2 class="text-center h2-topicos">Formação</h2>
 
     <div class="row">
       <div class="col-md-12">
         <div class="timeline">
-          <div class="timeline-item animated-slide-in-left">
+          <div class="timeline-item animated-slide-in-left text-white">
             <div class="timeline-marker"></div>
             <div class="timeline-content"> 
-              <h3 class="timeline-title">Graduação</h3>
-              <p>Sistemas para Internet - Faculdade de Tecnologia do Estado de SP (2022 - 2025)</p>
-              <button class="btn btn-border-1" data-toggle="modal" data-target="#modalGraduacao">Grade Curricular</button>
+              <h3 class="timeline-title"><i class="fas fa-graduation-cap"></i> Graduação</h3>
+              <p class="text-white">Sistemas para Internet - Faculdade de Tecnologia do Estado de SP (2022 - 2025)</p>
+              <button id="modal-1" class="btn-contato btn-border-3" data-toggle="modal" data-target="#modalGraduacao">Grade Curricular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+          <div class="timeline-item  animated-slide-in-left  ">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content"> 
+              <h3 class="timeline-title"><i class="fas fa-cogs"></i> Técnico</h3>
+              <p class="text-white">Desenvolvimento de Sistemas - Escola Técnica (Centro Paula Souza São Roque) (2019 - 2021)</p>
+              <button id="modal-2" class="btn-contato btn-border-3 " data-toggle="modal" data-target="#modalTecnico">Grade Curricular</button>
             </div>
           </div>
 
-          <div class="timeline-item  animated-slide-in-left">
+          <div class="timeline-item animated-slide-in-left  ">
             <div class="timeline-marker"></div>
             <div class="timeline-content"> 
-              <h3 class="timeline-title">Técnico</h3>
-              <p>Desenvolvimento de Sistemas - Escola Técnica (Centro Paula Souza São Roque) (2019 - 2021)</p>
-              <button class="btn btn-border-1" data-toggle="modal" data-target="#modalTecnico">Grade Curricular</button>
-            </div>
-          </div>
-
-          <div class="timeline-item animated-slide-in-left">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content"> 
-              <h3 class="timeline-title">Certificações</h3>
-              <p>Corel Draw - Instituto Share (2020)</p>
-              <p>Fundamentos Cyber segurança - Linux Foundation (2024)</p>
-              <p>IA Generativa - LinkedIn Learning (2024)</p>
-              <button class="btn btn-border-1" data-toggle="modal" data-target="#modalCertificacoes">Grade Curricular</button>
+              <h3 class="timeline-title"><i class="fas fa-medal"></i> Certificações</h3>
+              <p class="text-white">Corel Draw - Instituto Share (2020)</p>
+              <p class="text-white">Fundamentos Cyber segurança - Linux Foundation (2024)</p>
+              <p class="text-white">IA Generativa - LinkedIn Learning (2024)</p>
+              <button id="modal-3" class="btn-contato btn-border-3 " data-toggle="modal" data-target="#modalCertificacoes">Grade Curricular</button>
             </div>
           </div>
         </div>
@@ -234,7 +235,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-dark text-white">
         <h5>Desenvolvimento:<br></h5>
         <p class="p-modal">Design de Navegação e Interação, Desenvolvimento para Dispositivos Mobile com Flutter, Desenvolvimento para Servidores, Prototipagem e Testes de Usabilidade, Arquitetura Orientada a Serviços, Padrões de Design, Desenvolvimento web (HTML, CSS, JavaScript), Tópicos especiais (micro controladores).</p>
         <h5>Fundamentos da Programação:<br></h5>
@@ -259,7 +260,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-dark text-white">
         <h5>Desenvolvimento:<br></h5>
         <p class="p-modal">Programação de Aplicativos Móveis I, II, III com Csharp, Programação Web (HTML, CSS e JavaScript), Banco de Dados I, II, III (MySQL), Design Digital (Gimp, Fireworks), Sistemas Embarcados, Qualidade de Software e Testes.</p>
         <h5>Fundamentos de Programação:<br></h5>
@@ -279,7 +280,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-dark text-white">
         <h5>CorelDraw pelo Instituto Share (concluído - 2020):<br></h5>
         <p class="p-modal">Teoria das cores, Paletas, Psicologia das Cores, Padrões de Edições, Ferramenta CorelDraw.</p>
         <h5>Fundamentos de Cibersegurança pela LINUX FOUNDATION (concluído - 2024):<br></h5>
@@ -293,81 +294,168 @@
 </div>
 
 
-<section class="skills">
+
+
+
+<section id="Tecnologia" class="skills">
   <div class="container">
-    <h2 class="text-center h2-topicos text-white">Technologias</h2>
-   
-  
+    <h2 class="text-center h2-topicos text-white">Skills</h2>
     <div class="row">
-      <div class="eight columns">
-        <p class="topic-skill text-white">Front End</p>
-        <div class="progressBar">
-          <h4 class="text-white">HTML5, CSS3, Bootstrap</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-90"></div>
+      <!-- Imagem à esquerda -->
+      <div class="col-lg-6 mb-4 ">
+        <img src="./img/Criatividade.gif" alt="" class="img-skill">
+      </div>
+      <!-- Três cards pequenos à direita -->
+      <div class="col-lg-6">
+        <div class="row">
+          <!-- Card Front End -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Front End</h5>
+                <div class="progressBar">
+                  <h4>
+                    HTML5:
+                  </h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+
+                <div class="progressBar">
+                  <h4>
+                    CSS3:
+                  </h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+
+                <div class="progressBar">
+                  <h4>
+                    Bootstrap
+                  </h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+
+
+
+                <div class="progressBar">
+                  <h4>
+                    Javascript:
+                  </h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        
-    
-        <div class="progressBar">
-          <h4 class="text-white">Javascript</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-30"></div>
+          <!-- Card Back End -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Back End</h5>
+                <div class="progressBar">
+                  <h4>SQL Server:</h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="progressBar">
+                  <h4>PHP:</h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="progressBar">
+                  <h4>
+                    Estrutura de dados:
+                  </h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  
+                </div>
+                <div class="progressBar">
+                  <h4>
+                    Lógica de Programação:
+                  </h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Design -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Design</h5>
+                <div class="progressBar">
+                  <h4>Figma:</h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="progressBar">
+                  <h4>UI/ UX:</h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="progressBar">
+                  <h4>
+                    Draw.io
+                  </h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="progressBar">
+                  <h4>
+                    CorelDraw
+                  </h4>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="eight columns">
-        <p class="topic-skill text-white">Back End</p>
-
-        <div class="progressBar">
-          <h4 class="text-white">SQL Server</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-80"></div>
-          </div>
-        </div>
-        <div class="progressBar">
-          <h4 class="text-white">PHP</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-40"></div>
-          </div>
-        </div>
-        <div class="progressBar">
-          <h4 class="text-white">NodeJS</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-30"></div>
-          </div>
-        </div>
-      </div>
-
-        <div class="eight columns">
-        <p class=" topic-skill text-white">Design</p>
-
-    
-        <div class="progressBar">
-          <h4 class="text-white">Figma</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-90"></div>
-          </div>
-        </div>
-        <div class="progressBar">
-          <h4 class="text-white">UI/ UX</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-80"></div>
-          </div>
-        </div>
-        
-      </div>
-     
     </div>
   </div>
 </section>
 
-
+    
 
   <article id="Projeto" class="articleDois">
     <div class="container">
       <div class="row">
-        <h2 class="text-center h2-topicos text-white">Projetos</h2>
+        <h2 class="text-center h2-topicos ">Projetos</h2>
 
 
         <div class="container-fluid">
@@ -380,7 +468,7 @@
               <img class="img-left" src="./img/html.png" width="40px" alt="Tecnologia 1">
               <img class="img-left" src="./img/css.png" width="40px" alt="Tecnologia 1">
               <img class="img-left" src="./img/javascript.png" width="40px" alt="Tecnologia 1">
-              <img class="img-left" src="./img/bootstrap.png" width="40px" alt="Tecnologia 1">
+       
   
               <p class="text-left">Último projeto do semestre acadêmico de 2023, apresentando 3 jogos originais. Sendo eles: <br>
                 1- "Skate Game"  inspirado no jogo "Super 
@@ -530,7 +618,7 @@
 
   <footer class="footer">
     <div class="container text-center">
-      <p>&copy; 2024 - Jennyfer Alvim. Todos os direitos reservados.</p>
+      <small>&copy; 2024 - Jennyfer Alvim. Todos os direitos reservados.</small>
     </div>
   </footer>
 
