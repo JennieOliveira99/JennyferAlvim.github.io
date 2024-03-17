@@ -46,28 +46,3 @@ function downloadPDF() {
 
 
 
-
-window.addEventListener('scroll', function() {
-  const scrollPosition = window.scrollY;
-  const sections = document.querySelectorAll('section');
-
-  sections.forEach(function(section) {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-
-    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-      const sectionId = section.getAttribute('id');
-      const correspondingLink = document.querySelector('nav a[href="#' + sectionId + '"]');
-      
-      // Remova a classe active de todos os links
-      document.querySelectorAll('nav a').forEach(function(link) {
-        link.classList.remove('active');
-      });
-
-      // Adicione a classe active apenas ao link correspondente à seção visível
-      if (correspondingLink) {
-        correspondingLink.classList.add('active');
-      }
-    }
-  });
-});

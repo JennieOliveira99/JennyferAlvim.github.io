@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  overflow-x: hidden;/*tirar barra de rolagem*/
 
 }
 
@@ -19,7 +19,10 @@ body {
   overflow-x: hidden;/*tirar barra de rolagem*/
   background-color: #f6f5f2;
 }
+
+
 /******************************FIM*/
+/*=============================================*/
 
 /************************BOTOES*/
 
@@ -43,6 +46,7 @@ body {
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
   -moz-transition: ease-out 0.5s;
+  overflow: hidden;
 }
 
 .btn-code {
@@ -60,6 +64,7 @@ body {
   border: 2px solid #ff3800;
   cursor: pointer;
   transition: all 0.5s ease-out;
+  overflow: hidden;
   
 }
 
@@ -77,6 +82,7 @@ body {
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
   -moz-transition: ease-out 0.5s;
+  overflow: hidden;
 }
 
 .btn-contato{
@@ -97,6 +103,7 @@ body {
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
   -moz-transition: ease-out 0.5s;
+  overflow: hidden;
 }
 /*animation 1*/
 
@@ -266,7 +273,7 @@ body {
 p{
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 24px;
- 
+  overflow: hidden;
 }
 
 
@@ -278,7 +285,8 @@ p{
   font-family: "";
   margin-top: 20px;
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
+
+  overflow: hidden;}
 
 .sobre-text {
   color: #17141f;
@@ -309,6 +317,7 @@ h1 {
   margin-bottom: 10px;
   color: #ff3800;
   font-size: 3em;
+  overflow: hidden;
 }
 
 .h2-topicos {
@@ -317,6 +326,7 @@ h1 {
   margin-bottom: 45px;
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: #ff3800;
+  overflow: hidden;
 }
 
 
@@ -337,6 +347,7 @@ h1 {
   font-weight: bold;
   color: #f4f0e6;
   margin-left: 10px;
+  overflow: hidden;
 }
 
 .h2-tec {
@@ -346,6 +357,8 @@ h1 {
   margin-bottom: 15px;
   font-family: "Oswald", sans-serif;
   color: #ff3800;
+  overflow: hidden;
+
 }
 
 .h3-tec {
@@ -355,6 +368,7 @@ h1 {
   margin-left: 23px;
   margin-top: 15px;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .text-tec {
@@ -365,12 +379,17 @@ h1 {
   margin-left: 20px;
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: lighter;
+  overflow: hidden;
 }
 
 .h2-contato {
   font-size: 3em;
   color: #ff3800;
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  overflow: hidden;
+}
+.timeline-title{
+  overflow: hidden;
 }
 
 
@@ -384,16 +403,28 @@ h1 {
 	padding-top: 10px;
   padding-bottom: 50px;
   
+  
 }
 
 .progressBar {
-	margin-bottom: 20px; /* Ajuste conforme necessário */
+	margin-bottom: 20px; 
+  overflow: hidden;
+}
+
+h5{
+  overflow: hidden;
+}
+
+.card-body{
+  background: linear-gradient(-45deg, #000000, #17141f);
+  color: white;
 }
 
 .progressBar h4 {
 	font-size: 16px;
 	text-transform: none;
-	margin-bottom: 5px; /* Ajuste conforme necessário */
+	margin-bottom: 5px; 
+  overflow: hidden;
 }
 
 
@@ -622,21 +653,21 @@ nav {
 .servico-item1 {
   background: linear-gradient(-45deg,  #000000, #17141f);
   border-radius: 10px;
-  padding: 5px 8px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
+  padding: 5px 20px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
   justify-content: space-between;
 }
 
 .servico-item2 {
   background: linear-gradient(-45deg, #000000, #17141f);
   border-radius: 10px;
-  padding: 5px;
+  padding: 5px 20px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
   justify-content: space-between;
 }
 
 .servico-item3 {
   background: linear-gradient(-45deg, #000000, #17141f);
   border-radius: 10px;
-  padding: 5px;
+  padding: 5px 20px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
   justify-content: space-between;
 }
 
@@ -787,6 +818,8 @@ nav {
 .fa-star{
   color: #ff3800;
 }
+
+
 /*-----------------------------------------------------------CONTATO*/
 
 .articleContato {
@@ -847,26 +880,6 @@ label {
   opacity: 0.9; 
 }
 
-
-/*====================================================ANIMAÇÕES*/
-
-/*esquerda para direita*/
-
-.animated-slide-in-left {
-  animation: slide-in-left 0.3s ease forwards; /* Definindo a animação */
-  opacity: 0; /* Iniciando a opacidade em 0 para que o elemento seja invisível antes da animação */
-}
-
-@keyframes slide-in-left {
-  from {
-      transform: translateX(-100%); /* Da esquerda (fora do viewport) */
-      opacity: 0; /* Iniciando com opacidade 0 */
-  }
-  to {
-      transform: translateX(0); /* Para a posição inicial */
-      opacity: 1; /* Finalizando com opacidade 1 */
-  }
-}
 
 
 /*======================================================TELAS PEQUENAS*/
@@ -1017,8 +1030,8 @@ body{
   margin-left: 13px;
 }
 .img-skill{
-  max-width: 200px;
-  margin-left: 25px;
+  max-width: 270px;
+  margin-left: 35px;
 }
 
 
@@ -1221,8 +1234,9 @@ body{
 
   
   .img-skill{
-    max-width: 320px;
-    margin-left: 35px;
+    max-width: 360px;
+    margin-left: 42px;
+   
   }
 
   
@@ -1235,9 +1249,9 @@ body{
   
   .h2-project-left,
   .h2-project{
-    font-size: 33px;
-    margin-bottom: 10px;
-    margin-left: 45px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 51px;
   }
   .text-left{
     margin-right: 8px;
@@ -1248,11 +1262,17 @@ body{
   .text{
     margin-left: 51px;
     margin-right: 25px;
+    margin-top: 0;
   }
+
   .btn-code{
     margin-left: 51px;
   }
 
+  .img-left{
+    margin-bottom: 10px;
+    margin-left: 51px;
+  }
   .img-project{
    margin-left: 0;
   }
@@ -1292,21 +1312,42 @@ body{
   }
 
 
-  
-  /*===========================================================TELAS MEDIASSSSSSSS*/
-  @media screen and (min-width: 601px) {
-    *{
-      padding: 0;
-      margin: 0;
-      overflow-x: hidden;/*problema do width*/
-     
-    
-    }
+  /*=======================================================================TELAS UM POUCO MAIORES*/
+
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+
 
     .navbar-collapse{
       background-color: #f4f0e6;
       border-radius: 5px;
     }
 
+    
+    .img-skill{
+      margin-left: 50px;
+    }
+  /*CONTATO*/
 
+  .tect{
+    background-color: #373434;
+    color: #f4f0e6;
+    border-radius: 140px 0 170px 0;
+    padding-left:45px;
+  
+  }
+
+  .texto-contato{
+    font-size: 20px;
+  
+  }
+
+  .form-control{
+    max-width: 380px;
+   
+  }
+  .btn-code{
+   
+    margin-top: 30px;
+
+  }
   }
