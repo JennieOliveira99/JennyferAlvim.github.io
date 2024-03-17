@@ -723,7 +723,7 @@ nav {
 /*---------------------------------------------------------------------------------------------------------------------Projetos*/
 
 .articleDois {
-  background-color: #f7f3d2d3;
+  background-color: #f6f5f2; 
   width: 105%;
 }
 
@@ -1017,7 +1017,7 @@ body{
   margin-left: 13px;
 }
 .img-skill{
-  max-width: 250px;
+  max-width: 200px;
   margin-left: 25px;
 }
 
@@ -1129,7 +1129,7 @@ body{
 /*=========================VIDEO*/
 .section-video{
   max-width: 700px;
-   height: 600px;
+   height: 300px;
  }
  
  
@@ -1221,7 +1221,7 @@ body{
 
   
   .img-skill{
-    max-width: 400px;
+    max-width: 320px;
     margin-left: 35px;
   }
 
@@ -1289,4 +1289,24 @@ body{
     margin-top: 30px;
 
   }
+  }
+
+
+  
+  /*===========================================================TELAS MEDIASSSSSSSS*/
+  @media screen and (min-width: 601px) {
+    *{
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;/*problema do width*/
+     
+    
+    }
+
+    .navbar-collapse{
+      background-color: #f4f0e6;
+      border-radius: 5px;
+    }
+
+
   }
