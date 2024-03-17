@@ -1005,7 +1005,7 @@ body{
   .servico-item3{
     padding-left: 60px;
   }
-/*skills*/
+/*=====================================================================skills*/
   #skills{
     margin-top: 600px;
     padding: 0;
@@ -1021,10 +1021,9 @@ body{
   margin-left: 25px;
 }
 
-/*FORMAÇÃO*/
 
 
-  /*PROJETOS*/
+  /*=======================================================================PROJETOS*/
   
   .h2-project-left,
   .h2-project{
@@ -1214,7 +1213,7 @@ body{
   .servico-item3{
     padding-left: 60px;
   }
-/*skills*/
+/*====================================================skills*/
   #skills{
     margin-top: 600px;
     padding: 0;
@@ -1222,7 +1221,7 @@ body{
 
   
   .img-skill{
-    max-width: 450px;
+    max-width: 400px;
     margin-left: 35px;
   }
 
@@ -1232,7 +1231,7 @@ body{
     margin-left: 13px;
   }
 
-  /*PROJETOS*/
+  /*=======================================================PROJETOS*/
   
   .h2-project-left,
   .h2-project{
