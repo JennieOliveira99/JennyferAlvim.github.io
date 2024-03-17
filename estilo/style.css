@@ -17,7 +17,7 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   width: 100%;
   overflow-x: hidden;/*tirar barra de rolagem*/
-  background-color: #f7f3d2fc;
+  background-color: #f6f5f2;
 }
 /******************************FIM*/
 
@@ -508,7 +508,7 @@ h1,
 
 
 #header {
-  background-color: #f7f3d2;
+  background-color: #f6f5f2;
   height: 4em;
   margin-bottom: 3em;
   font-size: large;
@@ -566,7 +566,7 @@ nav {
 
 /*------------------------------------------SOBRE MIM*/
 .articleUm{
-  background-color: #f7f3d2f1; 
+  background-color: #f6f5f2c2;
   overflow: hidden; /* Para cortar qualquer conteúdo que saia da área do artigo */
   padding-top: 60px;
 }
@@ -589,7 +589,7 @@ nav {
 
 /*-------------------------------------------------------------------------------------------------SERVIÇOS*/
 .section-servico {
-  background-color: #f7f3d2de; 
+  background-color: #f6f5f2; 
   overflow: hidden;
   padding-bottom: 50px; /* Reduzindo o padding inferior para reduzir o espaço extra */
   margin-bottom: 0; /* Adicionando um espaço extra após a seção de serviços */
@@ -646,7 +646,7 @@ nav {
 /*--------------------------------------------------------------------------------------- FORMAÇÃO*/
 
 #Formacao{
-  background-color: #f7f3d2de; 
+  background-color: #f6f5f2; 
   padding-top: 90px;
   margin-top: 0;
  padding-bottom: 10px;
@@ -665,7 +665,7 @@ nav {
 .timeline {
   position: relative;
   margin-top: 50px;
-  background-color: #f7f3d2de; 
+  background-color: #f6f5f2; 
 }
 
 .timeline-item {
@@ -726,6 +726,7 @@ nav {
   background-color: #f7f3d2d3;
   width: 105%;
 }
+
 .h2-project {
   font-family: "Gruppo", sans-serif;
   margin-top: 30px;
@@ -790,8 +791,8 @@ nav {
 
 .articleContato {
   margin-bottom: 80px;
-  margin-top: 50px;
-  background-color: #f7f3d2de; 
+ padding-top: 50px;
+  background-color: #f6f5f2; 
  
 }
 
@@ -891,8 +892,7 @@ body{
 #header{
   max-width: 400px;/*problema do width*/
   height: 50px;
-
-background-color: #00000000;
+  background-color: transparent;
 }
 .img-nav{
   display: none;
@@ -905,6 +905,12 @@ background-color: #00000000;
 
 .navbar{
   background-color: #00000000;
+}
+
+ 
+.navbar-collapse{
+  background-color: #f4f0e6;
+  border-radius: 5px;
 }
 
 /*=========================VIDEO*/
@@ -966,7 +972,7 @@ background-color: #00000000;
  */
  .social-links {
   position: fixed;
- left: 0;
+  left: 0;
   /*transform: translateY(-50%);*/
   display: flex;
   flex-direction: column;
@@ -981,8 +987,7 @@ background-color: #00000000;
 }
 
 .social-icon:hover img {
- display: none
- ;
+ display: none;
 }
 
 
@@ -1074,9 +1079,215 @@ background-color: #00000000;
     margin-top: 30px;
 
   }
-  .footer{
-    font-size: 5px;
-  }
+ 
 }
 
+  /*===========================================================TELAS MEDIASSSSSSSS*/
+  @media screen and (min-width: 401px) and (max-width: 600px) {
+    *{
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;/*problema do width*/
+    
+    }
+
+    
+    p{
+      font-size: 21px;
   
+    }
+    body{
+    max-width: 600px;
+  }
+
+
+  /*==============================NAV*/
+  #header{
+    background-color: transparent;
+    height: 50px;
+  }
+
+  .img-nav{
+    display: none;
+  }
+  .navbar-toggler{
+    margin-left: 6px;
+    margin-top: 30px;
+    background-color: #ff3800;
+  }
+  
+  .navbar {
+    background-color: transparent; /* Defina a cor de fundo como transparente apenas em telas menores */
+  }
+  
+ 
+.navbar-collapse{
+  background-color: #f4f0e6;
+  border-radius: 5px;
+}
+
+
+/*=========================VIDEO*/
+.section-video{
+  max-width: 700px;
+   height: 600px;
+ }
+ 
+ 
+   #titulo{
+     font-size: 43px;
+     margin-top: 100px;
+   }
+  #textinho{
+   font-size: 32px;
+  }
+ 
+ 
+  #textinho1{
+   font-size: 29px;
+  }
+
+  /* =======================================================SOBRE */
+  .articleUm{
+    max-width: 600px;
+    margin: 0;
+   
+     }
+   
+   
+     .h2-sobre {
+       font-size: 32px;
+       margin-left: 0;
+     }
+   
+     
+     .sobre-text {
+       font-size: 18px;
+       margin-left: 0;
+   
+     }
+
+     .eu{
+      max-width: 450px;
+      margin-left: -20px;
+     }
+   
+
+/*============================================= Estilos para .link */
+  /*.links{
+    display: none;
+  }
+ */
+ .social-links {
+  position: fixed;
+  left: 0;
+  /*transform: translateY(-50%);*/
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 900;
+}
+
+
+.social-icon img {
+  width: 30px; /* Largura dos ícones */
+  height: 30px; /* Altura dos ícones*/
+  z-index: 1000;
+  margin-right: 25px;
+}
+
+.social-icon:hover img {
+ display: none;
+}
+
+  /* Estilos para .section-servico */
+  .section-servico {
+    font-size: 11px;
+    margin-right: 10px;
+  }
+
+  .h2-topicos{
+    font-size: 33px;
+  }
+  .servico-item1,
+  .servico-item2,
+  .servico-item3{
+    padding-left: 60px;
+  }
+/*skills*/
+  #skills{
+    margin-top: 600px;
+    padding: 0;
+  }
+
+  
+  .img-skill{
+    max-width: 450px;
+    margin-left: 35px;
+  }
+
+  
+  .progressBar{
+    padding-left: 33px;
+    margin-left: 13px;
+  }
+
+  /*PROJETOS*/
+  
+  .h2-project-left,
+  .h2-project{
+    font-size: 33px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+  }
+  .text-left{
+    margin-right: 8px;
+    margin-left: 51px;
+    margin-top: 0;
+
+  }
+  .text{
+    margin-left: 51px;
+    margin-right: 25px;
+  }
+  .btn-code{
+    margin-left: 51px;
+  }
+
+  .img-project{
+   margin-left: 0;
+  }
+  .img-projeto{
+    width: 300px;
+    margin-left: 0;
+  }
+ 
+  .img-audiobook{
+    max-width: 400px;
+  }
+
+  /*CONTATO*/
+
+  .tect{
+    background-color: #373434;
+    color: #f4f0e6;
+    border-radius: 140px 0 170px 0;
+    padding-left:45px;
+  
+  }
+
+  .texto-contato{
+    font-size: 20px;
+  
+  }
+
+  .form-control{
+    max-width: 280px;
+   
+  }
+  .btn-code{
+   
+    margin-top: 30px;
+
+  }
+  }
