@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById("textinho").style.opacity = "1";
         document.getElementById("textinho1").classList.remove("hidden");
         document.getElementById("textinho1").style.opacity = "1";
-
+        document.getElementById("scroll").classList.remove("hidden");
+        document.getElementById("scroll").style.opacity = "1";
     
        
      
@@ -45,4 +46,12 @@ function downloadPDF() {
 }
 
 
-
+/*
+function scrollDown() {
+  window.scrollBy({ 
+    top: window.innerHeight, // Scroll down pela altura da janela
+    left: 0, 
+    behavior: 'smooth' // Comportamento de scroll suave
+  });
+}
+*/
