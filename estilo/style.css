@@ -27,7 +27,6 @@ body {
 
 /************************BOTOES*/
 
-
 .btn {
   text-decoration: none;
   position: relative;
@@ -317,7 +316,7 @@ h2 {
 .h2-topicos {
   margin-top: 70px;
   font-size: 70px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
   font-family: scandia-web, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: #ff3800;
   overflow: hidden;
@@ -326,8 +325,8 @@ h2 {
 
 
 .p-servico {
-  font-size: 1.3em;
-  color: #fdfdfd;
+  font-size: 1.2em;
+  color: #000000;
   font-weight: lighter;
   opacity: 0.8;
   margin-left: 10px;
@@ -339,7 +338,7 @@ h2 {
 .h3-servico {
   font-family: "Gruppo", sans-serif;
   font-weight: bold;
-  color: #f4f0e6;
+  color: #ff3800;
   margin-left: 10px;
   overflow: hidden;
 }
@@ -409,9 +408,11 @@ h5{
 }
 
 .card-body{
-  background: linear-gradient(-45deg, #000000, #17141f);
+  background: linear-gradient(-45deg, #3b3838, #524e4e);
   color: white;
+  border-radius: 30px 10px;
 }
+
 
 .progressBar h4 {
 	font-size: 16px;
@@ -433,6 +434,8 @@ h5{
   height: 100vh;
   margin-top: 0;
   overflow: hidden;
+  margin-bottom: 100px;
+
 }
 
 
@@ -488,6 +491,7 @@ h1{
 .fa-chevron-down{
   color: #ff3800;
   animation: scrollUpDown 1s infinite alternate;
+
 }
 
 /*-----animacao da seta*/
@@ -667,21 +671,21 @@ nav {
 
 
 .servico-item1 {
-  background: linear-gradient(-45deg,  #000000, #17141f);
-  border-radius: 10px;
-  padding: 5px 20px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
-  justify-content: space-between;
+   /* background: linear-gradient(-45deg, #3b3838, #524e4e);*/
+    border-radius: 10px;
+    padding: 5px 20px 5px 8px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
+    justify-content: space-between;
 }
 
 .servico-item2 {
-  background: linear-gradient(-45deg, #000000, #17141f);
+ /* background: linear-gradient(-45deg, #3b3838, #524e4e);*/
   border-radius: 10px;
   padding: 5px 20px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
   justify-content: space-between;
 }
 
 .servico-item3 {
-  background: linear-gradient(-45deg, #000000, #17141f);
+ /* background: linear-gradient(-45deg, #3b3838, #524e4e);*/
   border-radius: 10px;
   padding: 5px 20px 5px 5px; /* Padding de 5px em todas as direções, exceto à direita que é 8px */
   justify-content: space-between;
@@ -824,7 +828,54 @@ nav {
   margin-top: 50px;
 }
 
+    /*===========================================Modal projeto
+    #modalOutrosProjetos{
+    padding: 70px;
+}
+  
+    #code1,
+    #view2{
+      text-decoration: none;
+      position: relative;
+      height: 10px;
+      display: inline-block;
+      margin: 15px;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding-bottom: 27px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #1a1a1a;
+      background: #f4f0e6;
+      border: 2px solid #ff3800;
+      cursor: pointer;
+      transition: ease-out 0.5s;
+      overflow: hidden;
+    }
+    
+    #code1:hover,
+    #view2:hover{
+      background-color: #333;
+      color: #ffffff;
+    }
+    
+    .card-title{
+      font-family: "Gruppo", sans-serif;
+      margin-top: 40px;
+      font-size: 30px;
+      color: #ff3800;
+      font-weight: bolder;
+      margin-left: 40px;
+    }
 
+    .p-small{
+      margin-left: 5px;
+      font-size: 15px;
+      margin-left:30px;
+    }
+    
+*/
 /*--------------------------------------------------------------------skills*/
 
 .skills{
@@ -836,11 +887,12 @@ nav {
 }
 
 
+
 /*-----------------------------------------------------------CONTATO*/
 
 .articleContato {
   margin-bottom: 80px;
- padding-top: 50px;
+   padding-top: 50px;
   background-color: #f6f5f2; 
  
 }
@@ -1083,6 +1135,8 @@ body{
     margin-left: 0;
   }
 
+
+
   /*CONTATO*/
 
   .tect{
@@ -1110,6 +1164,14 @@ body{
  
 }
 
+
+.fa-chevron-down{
+
+  margin-top: 0;
+  margin-bottom: 200px;
+}
+
+
   /*===========================================================TELAS MEDIASSSSSSSS*/
   @media screen and (min-width: 401px) and (max-width: 600px) {
     *{
@@ -1119,6 +1181,11 @@ body{
     
     }
 
+    .fa-chevron-down{
+
+      margin-top: 0;
+      margin-bottom: 200px;
+    }
     
     p{
       font-size: 21px;
@@ -1158,7 +1225,7 @@ body{
 /*=========================VIDEO*/
 .section-video{
   max-width: 700px;
-   height: 300px;
+   height: 430px;
  }
  
  
