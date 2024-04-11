@@ -325,7 +325,7 @@ h2 {
 
 
 .p-servico {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #000000;
   font-weight: lighter;
   opacity: 0.8;
@@ -384,44 +384,6 @@ h2 {
 .timeline-title{
   overflow: hidden;
 }
-
-
-/******************************FIM*/
-
-
-
-/* Skills Section
-********************************************************************* */
-.skills {
-	padding-top: 10px;
-  padding-bottom: 50px;
-  
-}
-
-.progressBar {
-	margin-bottom: 20px; 
-  overflow: hidden;
-}
-
-h5{
-  overflow: hidden;
-}
-
-.card-body{
-  background: linear-gradient(-45deg, #3b3838, #524e4e);
-  color: white;
-  border-radius: 30px 10px;
-}
-
-
-.progressBar h4 {
-	font-size: 16px;
-	text-transform: none;
-	margin-bottom: 5px; 
-  overflow: hidden;
-}
-
-
 
 
 /******************************FIM*/
@@ -667,6 +629,7 @@ nav {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 5px;
+  
 }
 
 
@@ -691,6 +654,9 @@ nav {
   justify-content: space-between;
 }
 
+.p-servico{
+  font-size: 1.3em;
+}
 
 
 
@@ -771,6 +737,51 @@ nav {
   background-color: #f7f3d2; /* Cor de fundo do modal */
   color: #333; /* Cor do texto do modal */
 }
+
+
+/* Skills Section
+********************************************************************* */
+.skills {
+	padding-top: 10px;
+  padding-bottom: 50px;
+  
+}
+
+.progressBar {
+	margin-bottom: 20px; 
+  overflow: hidden;
+}
+
+h5{
+  overflow: hidden;
+}
+
+.card-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.593), rgba(0, 0, 0, 0.845)), url('../img/girl\(6\).jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 20px;
+  padding: 20px; /* Adicione um preenchimento interno para melhorar a aparência */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+
+
+
+.progressBar h4 {
+	font-size: 16px;
+	text-transform: none;
+	margin-bottom: 5px; 
+  overflow: hidden;
+}
+
+
+
+
+/******************************FIM*/
+
+
 /*---------------------------------------------------------------------------------------------------------------------Projetos*/
 
 .articleDois {
@@ -828,54 +839,6 @@ nav {
   margin-top: 50px;
 }
 
-    /*===========================================Modal projeto
-    #modalOutrosProjetos{
-    padding: 70px;
-}
-  
-    #code1,
-    #view2{
-      text-decoration: none;
-      position: relative;
-      height: 10px;
-      display: inline-block;
-      margin: 15px;
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 1px;
-      padding-bottom: 27px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #1a1a1a;
-      background: #f4f0e6;
-      border: 2px solid #ff3800;
-      cursor: pointer;
-      transition: ease-out 0.5s;
-      overflow: hidden;
-    }
-    
-    #code1:hover,
-    #view2:hover{
-      background-color: #333;
-      color: #ffffff;
-    }
-    
-    .card-title{
-      font-family: "Gruppo", sans-serif;
-      margin-top: 40px;
-      font-size: 30px;
-      color: #ff3800;
-      font-weight: bolder;
-      margin-left: 40px;
-    }
-
-    .p-small{
-      margin-left: 5px;
-      font-size: 15px;
-      margin-left:30px;
-    }
-    
-*/
 /*--------------------------------------------------------------------skills*/
 
 .skills{
