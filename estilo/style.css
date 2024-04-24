@@ -105,82 +105,36 @@ body {
   -moz-transition: ease-out 0.5s;
   overflow: hidden;
 }
-/*animation 1*/
 
-.btn.btn-border-1::after,
-.btn.btn-border-1::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    transition: .5s;
+
+.btn-border-1 {
+  color: #ff3800; /* cor do texto padrão */
+  border-color: #ff3800; /* cor da borda padrão */
 }
 
-.btn.btn-border-1::after {
-    top: -9px;
-    left: -9px;
-    border-top: 3px solid transparent;
-    border-left: 3px solid transparent;
+.btn-border-1:hover {
+  color: rgb(255, 247, 247); /* nova cor do texto ao passar o mouse */
+  border-color: #ff3800; /* nova cor da borda ao passar o mouse */
+  background-color: #ff370080; /* nova cor de fundo ao passar o mouse */
 }
 
-.btn.btn-border-1::before {
-    bottom: -9px;
-    right: -9px;
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid transparent;
+.btn-border-1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3800;
+  z-index: -1;
+  transition: all 0.3s ease;
 }
 
-.btn.btn-border-1:hover {
-    color: #222222;
+.btn-border-1:hover::before {
+  transform: scaleY(0);
 }
 
-.btn.btn-border-1:hover::after,
-.btn.btn-border-1:hover::before {
-    width: 30px;
-    height: 30px;
-    border-color: #222222;
-}
-
-/*animation 2*/
-
-
-.btn-sm.btn-border-2::after,
-.btn-sm.btn-border-2::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    transition: .5s;
-}
-
-.btn-sm.btn-border-2::after {
-    top: -3px;
-    left: -3px;
-    border-top: 3px solid transparent;
-    border-left: 3px solid transparent;
-}
-
-.btn-sm.btn-border-2::before {
-    bottom: -3px;
-    right: -3px;
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid transparent;
-}
-
-.btn-sm.btn-border-2:hover {
-    color: #f4f0e6;
-}
-
-.btn-sm.btn-border-2:hover::after,
-.btn-sm.btn-border-2:hover::before {
-    width: calc(50% + 3px);
-    height: calc(50% + 3px);
-    border-color: #000000;
-}
-
-
-/*animation 3*/
-
+/*Botao de escolaridade modal*/
 
 .btn-contato.btn-border-3::after,
 .btn-contato.btn-border-3::before {
@@ -230,41 +184,33 @@ body {
 
 
 /*animação code e view*/
-.btn-code.btn-border-1::after,
-.btn-code.btn-border-1::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    transition: .5s;
+
+.btn-border-1 {
+  color: #ff3800; /* cor do texto padrão */
+  border-color: #ff3800; /* cor da borda padrão */
 }
 
-.btn-code.btn-border-1::after {
-    top: -9px;
-    left: -9px;
-    border-top: 3px solid transparent;
-    border-left: 3px solid transparent;
+.btn-border-1:hover, .btn-code:hover {
+  color: white; /* nova cor do texto ao passar o mouse */
+  border-color: #ff3800; /* nova cor da borda ao passar o mouse */
+  background-color: #ff37009f; /* nova cor de fundo ao passar o mouse */
 }
 
-.btn-code.btn-border-1::before {
-    bottom: -9px;
-    right: -9px;
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid transparent;
+.btn-border-1::before, .btn-code::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3800;
+  z-index: -1;
+  transition: all 0.3s ease;
 }
 
-.btn-code.btn-border-1:hover {
-    color: #222222;
+.btn-border-1:hover::before, .btn-code:hover::before {
+  transform: scaleY(0);
 }
-
-.btn-code.btn-border-1:hover::after,
-.btn-code.btn-border-1:hover::before {
-    width: 30px;
-    height: 30px;
-    border-color: #222222;
-}
-
-
 
 
 /*************************FIM BOTOES*/
@@ -691,7 +637,7 @@ nav {
   border-left: 3px solid #ff3800;
   margin-bottom: 30px;
   border-radius: 5px;
-  background-color: #373434;
+  background-color: #373434d8;
 }
 
 /*bolinha*/
@@ -757,7 +703,7 @@ h5{
 }
 
 .card-body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.593), rgba(0, 0, 0, 0.845)), url('../img/girl\(6\).jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.925)), url('../img/girl\(6\).jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -856,7 +802,7 @@ h5{
 .articleContato {
   margin-bottom: 80px;
    padding-top: 50px;
-  background-color: #f6f5f2; 
+ /* background-color: #f6f5f200; */
  
 }
 
