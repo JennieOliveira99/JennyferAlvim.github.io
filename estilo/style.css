@@ -703,7 +703,7 @@ h5{
 }
 
 .card-body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.925)), url('../img/girl\(6\).jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(168, 155, 155, 0.596)), url('../img/girl\(6\).jpg');
   background-size: cover;
   background-position: center;
   color: white;
